@@ -1,0 +1,1021 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="label" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="directed"><node id="OpenAI">
+  <data key="d0">Organization</data>
+</node>
+<node id="2015">
+  <data key="d0">Year</data>
+</node>
+<node id="Sam Altman">
+  <data key="d0">Person</data>
+</node>
+<node id="Greg Brockman">
+  <data key="d0">Person</data>
+</node>
+<node id="Ilya Sutskever">
+  <data key="d0">Person</data>
+</node>
+<node id="Elon Musk">
+  <data key="d0">Person</data>
+</node>
+<node id="Wojciech Zaremba">
+  <data key="d0">Person</data>
+</node>
+<node id="San Francisco, California">
+  <data key="d0">Location</data>
+</node>
+<node id="GPT-4">
+  <data key="d0">Product</data>
+</node>
+<node id="2023">
+  <data key="d0">Year</data>
+</node>
+<node id="ChatGPT">
+  <data key="d0">Product</data>
+</node>
+<node id="2022">
+  <data key="d0">Year</data>
+</node>
+<node id="Google">
+  <data key="d0">Organization</data>
+</node>
+<node id="1998">
+  <data key="d0">Year</data>
+</node>
+<node id="Larry Page">
+  <data key="d0">Person</data>
+</node>
+<node id="Sergey Brin">
+  <data key="d0">Person</data>
+</node>
+<node id="Mountain View, California">
+  <data key="d0">Location</data>
+</node>
+<node id="Sundar Pichai">
+  <data key="d0">Person</data>
+</node>
+<node id="Bard AI assistant">
+  <data key="d0">Product</data>
+</node>
+<node id="DeepMind">
+  <data key="d0">Organization</data>
+</node>
+<node id="one of the world's leading AI research labs">
+  <data key="d0">Organization</data>
+</node>
+<node id="Microsoft">
+  <data key="d0">Organization</data>
+</node>
+<node id="1975">
+  <data key="d0">Year</data>
+</node>
+<node id="Bill Gates">
+  <data key="d0">Person</data>
+</node>
+<node id="Paul Allen">
+  <data key="d0">Person</data>
+</node>
+<node id="Redmond, Washington">
+  <data key="d0">Location</data>
+</node>
+<node id="Satya Nadella">
+  <data key="d0">Person</data>
+</node>
+<node id="Copilot">
+  <data key="d0">Product</data>
+</node>
+<node id="LinkedIn">
+  <data key="d0">Organization</data>
+</node>
+<node id="GitHub">
+  <data key="d0">Organization</data>
+</node>
+<node id="2019">
+  <data key="d0">Year</data>
+</node>
+<node id="Office 365">
+  <data key="d0">Product</data>
+</node>
+<node id="2016">
+  <data key="d0">Year</data>
+</node>
+<node id="2018">
+  <data key="d0">Year</data>
+</node>
+<node id="Apple">
+  <data key="d0">Organization</data>
+</node>
+<node id="1976">
+  <data key="d0">Year</data>
+</node>
+<node id="Steve Jobs">
+  <data key="d0">Person</data>
+</node>
+<node id="Steve Wozniak">
+  <data key="d0">Person</data>
+</node>
+<node id="Ronald Wayne">
+  <data key="d0">Person</data>
+</node>
+<node id="Cupertino">
+  <data key="d0">Location</data>
+</node>
+<node id="California">
+  <data key="d0">Location</data>
+</node>
+<node id="Tim Cook">
+  <data key="d0">Person</data>
+</node>
+<node id="Apple Intelligence">
+  <data key="d0">Product</data>
+</node>
+<node id="2024">
+  <data key="d0">Year</data>
+</node>
+<node id="Meta Platforms">
+  <data key="d0">Organization</data>
+</node>
+<node id="2004">
+  <data key="d0">Year</data>
+</node>
+<node id="Mark Zuckerberg">
+  <data key="d0">Person</data>
+</node>
+<node id="Menlo Park, California">
+  <data key="d0">Location</data>
+</node>
+<node id="Llama family of open-source large language models">
+  <data key="d0">Product</data>
+</node>
+<node id="Instagram">
+  <data key="d0">Organization</data>
+</node>
+<node id="WhatsApp">
+  <data key="d0">Organization</data>
+</node>
+<node id="FAIR">
+  <data key="d0">Organization</data>
+</node>
+<node id="Anthropic">
+  <data key="d0">Organization</data>
+</node>
+<node id="2021">
+  <data key="d0">Year</data>
+</node>
+<node id="Dario Amodei">
+  <data key="d0">Person</data>
+</node>
+<node id="Daniela Amodei">
+  <data key="d0">Person</data>
+</node>
+<node id="Claude family of large language models">
+  <data key="d0">Product</data>
+</node>
+<node id="Claude 3 Opus">
+  <data key="d0">Product</data>
+</node>
+<node id="Amazon">
+  <data key="d0">Organization</data>
+</node>
+<node id="NVIDIA">
+  <data key="d0">Organization</data>
+</node>
+<node id="1993">
+  <data key="d0">Year</data>
+</node>
+<node id="Jensen Huang">
+  <data key="d0">Person</data>
+</node>
+<node id="Chris Malachowsky">
+  <data key="d0">Person</data>
+</node>
+<node id="Curtis Priem">
+  <data key="d0">Person</data>
+</node>
+<node id="Santa Clara, California">
+  <data key="d0">Location</data>
+</node>
+<node id="H100 GPU">
+  <data key="d0">Product</data>
+</node>
+<node id="AMD">
+  <data key="d0">Organization</data>
+</node>
+<node id="Intel">
+  <data key="d0">Organization</data>
+</node>
+<node id="2010">
+  <data key="d0">Year</data>
+</node>
+<node id="Demis Hassabis">
+  <data key="d0">Person</data>
+</node>
+<node id="Shane Legg">
+  <data key="d0">Person</data>
+</node>
+<node id="Mustafa Suleyman">
+  <data key="d0">Person</data>
+</node>
+<node id="London, United Kingdom">
+  <data key="d0">Location</data>
+</node>
+<node id="AlphaFold">
+  <data key="d0">Product</data>
+</node>
+<node id="2020">
+  <data key="d0">Year</data>
+</node>
+<node id="AlphaGo">
+  <data key="d0">Product</data>
+</node>
+<node id="world champion">
+  <data key="d0">Person</data>
+</node>
+<node id="Amazon Web Services">
+  <data key="d0">Organization</data>
+</node>
+<node id="1994">
+  <data key="d0">Year</data>
+</node>
+<node id="Jeff Bezos">
+  <data key="d0">Person</data>
+</node>
+<node id="Seattle, Washington">
+  <data key="d0">Location</data>
+</node>
+<node id="Andy Jassy">
+  <data key="d0">Person</data>
+</node>
+<node id="AWS">
+  <data key="d0">Organization</data>
+</node>
+<node id="Bedrock">
+  <data key="d0">Product</data>
+</node>
+<node id="Mistral AI">
+  <data key="d0">Organization</data>
+</node>
+<node id="Arthur Mensch">
+  <data key="d0">Person</data>
+</node>
+<node id="Guillaume Lample">
+  <data key="d0">Person</data>
+</node>
+<node id="Timothée Lacroix">
+  <data key="d0">Person</data>
+</node>
+<node id="Paris, France">
+  <data key="d0">Location</data>
+</node>
+<node id="Mistral 7B">
+  <data key="d0">Product</data>
+</node>
+<node id="xAI">
+  <data key="d0">Organization</data>
+</node>
+<node id="Palo Alto, California">
+  <data key="d0">Location</data>
+</node>
+<node id="Grok">
+  <data key="d0">Product</data>
+</node>
+<node id="Cohere">
+  <data key="d0">Organization</data>
+</node>
+<node id="Aidan Gomez">
+  <data key="d0">Person</data>
+</node>
+<node id="Ivan Zhang">
+  <data key="d0">Person</data>
+</node>
+<node id="Nick Frosst">
+  <data key="d0">Person</data>
+</node>
+<node id="Toronto, Canada">
+  <data key="d0">Location</data>
+</node>
+<node id="Command R series">
+  <data key="d0">Product</data>
+</node>
+<node id="Stability AI">
+  <data key="d0">Organization</data>
+</node>
+<node id="Emad Mostaque">
+  <data key="d0">Person</data>
+</node>
+<node id="Stable Diffusion">
+  <data key="d0">Product</data>
+</node>
+<node id="Midjourney">
+  <data key="d0">Organization</data>
+</node>
+<node id="DALL-E">
+  <data key="d0">Product</data>
+</node>
+<node id="Hugging Face">
+  <data key="d0">Organization</data>
+</node>
+<node id="Clément Delangue">
+  <data key="d0">Person</data>
+</node>
+<node id="Julien Chaumond">
+  <data key="d0">Person</data>
+</node>
+<node id="Thomas Wolf">
+  <data key="d0">Person</data>
+</node>
+<node id="New York, United States">
+  <data key="d0">Location</data>
+</node>
+<node id="Salesforce">
+  <data key="d0">Organization</data>
+</node>
+<node id="Transformers library">
+  <data key="d0">Product</data>
+</node>
+<node id="1968">
+  <data key="d0">Year</data>
+</node>
+<node id="Robert Noyce">
+  <data key="d0">Person</data>
+</node>
+<node id="Gordon Moore">
+  <data key="d0">Person</data>
+</node>
+<node id="Pat Gelsinger">
+  <data key="d0">Person</data>
+</node>
+<node id="Habana Labs">
+  <data key="d0">Organization</data>
+</node>
+<node id="Gaudi series of AI accelerators">
+  <data key="d0">Product</data>
+</node>
+<node id="1969">
+  <data key="d0">Year</data>
+</node>
+<node id="Jerry Sanders">
+  <data key="d0">Person</data>
+</node>
+<node id="Lisa Su">
+  <data key="d0">Person</data>
+</node>
+<node id="MI300X GPU">
+  <data key="d0">Product</data>
+</node>
+<node id="Meta">
+  <data key="d0">Organization</data>
+</node>
+<node id="Samsung Electronics">
+  <data key="d0">Organization</data>
+</node>
+<node id="Samsung Group">
+  <data key="d0">Organization</data>
+</node>
+<node id="Samsung">
+  <data key="d0">Organization</data>
+</node>
+<node id="Suwon, South Korea">
+  <data key="d0">Location</data>
+</node>
+<node id="TSMC">
+  <data key="d0">Organization</data>
+</node>
+<node id="Harman International">
+  <data key="d0">Organization</data>
+</node>
+<node id="2017">
+  <data key="d0">Year</data>
+</node>
+<node id="Baidu">
+  <data key="d0">Organization</data>
+</node>
+<node id="2000">
+  <data key="d0">Year</data>
+</node>
+<node id="Robin Li">
+  <data key="d0">Person</data>
+</node>
+<node id="Eric Xu">
+  <data key="d0">Person</data>
+</node>
+<node id="Beijing, China">
+  <data key="d0">Location</data>
+</node>
+<node id="ERNIE Bot">
+  <data key="d0">Product</data>
+</node>
+<node id="Scale AI">
+  <data key="d0">Organization</data>
+</node>
+<node id="Alexandr Wang">
+  <data key="d0">Person</data>
+</node>
+<node id="Appen">
+  <data key="d0">Organization</data>
+</node>
+<node id="Labelbox">
+  <data key="d0">Organization</data>
+</node>
+<node id="Palantir Technologies">
+  <data key="d0">Organization</data>
+</node>
+<node id="2003">
+  <data key="d0">Year</data>
+</node>
+<node id="Peter Thiel">
+  <data key="d0">Person</data>
+</node>
+<node id="Alex Karp">
+  <data key="d0">Person</data>
+</node>
+<node id="Joe Lonsdale">
+  <data key="d0">Person</data>
+</node>
+<node id="Stephen Cohen">
+  <data key="d0">Person</data>
+</node>
+<node id="Nathan Gettings">
+  <data key="d0">Person</data>
+</node>
+<node id="Denver, Colorado">
+  <data key="d0">Location</data>
+</node>
+<node id="AIP">
+  <data key="d0">Product</data>
+</node>
+<node id="Microsoft Azure">
+  <data key="d0">Organization</data>
+</node>
+<edge source="OpenAI" target="2015" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="OpenAI" target="Sam Altman" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="OpenAI" target="Greg Brockman" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="OpenAI" target="Ilya Sutskever" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="OpenAI" target="Elon Musk" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="OpenAI" target="Wojciech Zaremba" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="OpenAI" target="San Francisco, California" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="OpenAI" target="GPT-4" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="OpenAI" target="ChatGPT" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="OpenAI" target="2018" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="OpenAI" target="DALL-E" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Sam Altman" target="OpenAI" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="Elon Musk" target="xAI" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="GPT-4" target="2023" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="ChatGPT" target="2022" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Google" target="1998" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Google" target="Larry Page" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Google" target="Sergey Brin" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Google" target="Mountain View, California" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Google" target="Bard AI assistant" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Google" target="DeepMind" id="0">
+  <data key="d1">ACQUIRED</data>
+</edge>
+<edge source="Google" target="one of the world's leading AI research labs" id="0">
+  <data key="d1">ACQUIRED</data>
+</edge>
+<edge source="Google" target="Anthropic" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="Google" target="Hugging Face" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="Sundar Pichai" target="Google" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="Bard AI assistant" target="2023" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="DeepMind" target="Google" id="0">
+  <data key="d1">SUBSIDIARY_OF</data>
+</edge>
+<edge source="DeepMind" target="Google" id="1">
+  <data key="d1">ACQUIRED</data>
+</edge>
+<edge source="DeepMind" target="2010" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="DeepMind" target="Demis Hassabis" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="DeepMind" target="Shane Legg" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="DeepMind" target="Mustafa Suleyman" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="DeepMind" target="London, United Kingdom" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="DeepMind" target="AlphaFold" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="DeepMind" target="AlphaGo" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Microsoft" target="1975" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Microsoft" target="Bill Gates" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Microsoft" target="Paul Allen" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Microsoft" target="Redmond, Washington" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Microsoft" target="OpenAI" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="Microsoft" target="Copilot" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Microsoft" target="LinkedIn" id="0">
+  <data key="d1">ACQUIRED</data>
+</edge>
+<edge source="Microsoft" target="GitHub" id="0">
+  <data key="d1">ACQUIRED</data>
+</edge>
+<edge source="Microsoft" target="2019" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="Microsoft" target="Office 365" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Microsoft" target="2016" id="0">
+  <data key="d1">ACQUIRED</data>
+</edge>
+<edge source="Microsoft" target="2018" id="0">
+  <data key="d1">ACQUIRED</data>
+</edge>
+<edge source="Microsoft" target="Mistral AI" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="Microsoft" target="2024" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="Microsoft" target="AMD" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="Microsoft" target="Scale AI" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="Satya Nadella" target="Microsoft" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="Copilot" target="2023" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Apple" target="1976" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Apple" target="Steve Jobs" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Apple" target="Steve Wozniak" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Apple" target="Ronald Wayne" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Apple" target="Cupertino" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Apple" target="California" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Apple" target="Apple Intelligence" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Apple" target="2024" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Apple" target="Google" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Apple" target="Microsoft" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Tim Cook" target="Apple" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="Meta Platforms" target="2004" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Meta Platforms" target="Mark Zuckerberg" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Meta Platforms" target="Menlo Park, California" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Meta Platforms" target="Llama family of open-source large language models" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Meta Platforms" target="Instagram" id="0">
+  <data key="d1">ACQUIRED</data>
+</edge>
+<edge source="Meta Platforms" target="WhatsApp" id="0">
+  <data key="d1">ACQUIRED</data>
+</edge>
+<edge source="Meta Platforms" target="FAIR" id="0">
+  <data key="d1">COLLABORATES_WITH</data>
+</edge>
+<edge source="Mark Zuckerberg" target="Meta Platforms" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="Anthropic" target="2021" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Anthropic" target="Dario Amodei" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Anthropic" target="Daniela Amodei" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Anthropic" target="San Francisco, California" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Anthropic" target="Claude family of large language models" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Anthropic" target="2023" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="Dario Amodei" target="Anthropic" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="Claude 3 Opus" target="2024" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Amazon" target="Anthropic" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="Amazon" target="1994" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Amazon" target="Jeff Bezos" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Amazon" target="Seattle, Washington" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Amazon" target="Hugging Face" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="NVIDIA" target="1993" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="NVIDIA" target="Jensen Huang" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="NVIDIA" target="Chris Malachowsky" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="NVIDIA" target="Curtis Priem" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="NVIDIA" target="Santa Clara, California" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="NVIDIA" target="H100 GPU" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="NVIDIA" target="AMD" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="NVIDIA" target="Intel" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="NVIDIA" target="Gaudi series of AI accelerators" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Jensen Huang" target="NVIDIA" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="H100 GPU" target="2022" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="AMD" target="1969" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="AMD" target="Jerry Sanders" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="AMD" target="Santa Clara, California" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="AMD" target="MI300X GPU" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="AMD" target="NVIDIA" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="AMD" target="Intel" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Intel" target="1968" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Intel" target="Robert Noyce" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Intel" target="Gordon Moore" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Intel" target="Santa Clara, California" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Intel" target="NVIDIA" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Intel" target="AMD" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Intel" target="Habana Labs" id="0">
+  <data key="d1">ACQUIRED</data>
+</edge>
+<edge source="Intel" target="Gaudi series of AI accelerators" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Demis Hassabis" target="DeepMind" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="AlphaFold" target="2020" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="AlphaGo" target="world champion" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="AlphaGo" target="2016" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Amazon Web Services" target="Amazon" id="0">
+  <data key="d1">SUBSIDIARY_OF</data>
+</edge>
+<edge source="Andy Jassy" target="Amazon" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="AWS" target="Anthropic" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="AWS" target="Bedrock" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Bedrock" target="2023" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Mistral AI" target="2023" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Mistral AI" target="2023" id="1">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Mistral AI" target="Arthur Mensch" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Mistral AI" target="Guillaume Lample" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Mistral AI" target="Timothée Lacroix" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Mistral AI" target="Paris, France" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Mistral AI" target="Mistral 7B" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Arthur Mensch" target="Mistral AI" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="xAI" target="2023" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="xAI" target="Elon Musk" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="xAI" target="Palo Alto, California" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="xAI" target="Grok" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="xAI" target="OpenAI" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Cohere" target="2019" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Cohere" target="Aidan Gomez" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Cohere" target="Ivan Zhang" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Cohere" target="Nick Frosst" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Cohere" target="Toronto, Canada" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Cohere" target="Command R series" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Aidan Gomez" target="Cohere" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="Command R series" target="2024" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Stability AI" target="2019" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Stability AI" target="Emad Mostaque" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Stability AI" target="London, United Kingdom" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Stability AI" target="Stable Diffusion" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Stability AI" target="Midjourney" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Stability AI" target="DALL-E" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Stable Diffusion" target="2022" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="DALL-E" target="OpenAI" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="DALL-E" target="2021" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Hugging Face" target="2016" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Hugging Face" target="Clément Delangue" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Hugging Face" target="Julien Chaumond" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Hugging Face" target="Thomas Wolf" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Hugging Face" target="New York, United States" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Hugging Face" target="Transformers library" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Salesforce" target="Hugging Face" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="Pat Gelsinger" target="Intel" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="Lisa Su" target="AMD" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="Meta" target="AMD" id="0">
+  <data key="d1">INVESTED_IN</data>
+</edge>
+<edge source="Samsung Electronics" target="Samsung Group" id="0">
+  <data key="d1">SUBSIDIARY_OF</data>
+</edge>
+<edge source="Samsung" target="Suwon, South Korea" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Samsung" target="TSMC" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Samsung" target="Intel" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Samsung" target="Harman International" id="0">
+  <data key="d1">ACQUIRED</data>
+</edge>
+<edge source="Samsung" target="2017" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Baidu" target="2000" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Baidu" target="Robin Li" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Baidu" target="Eric Xu" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Baidu" target="Beijing, China" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Baidu" target="ERNIE Bot" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Baidu" target="2023" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Baidu" target="Google" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Baidu" target="OpenAI" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Robin Li" target="Baidu" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="Scale AI" target="2016" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Scale AI" target="Alexandr Wang" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Scale AI" target="San Francisco, California" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Scale AI" target="Appen" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Scale AI" target="Labelbox" id="0">
+  <data key="d1">COMPETES_WITH</data>
+</edge>
+<edge source="Alexandr Wang" target="Scale AI" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+<edge source="Palantir Technologies" target="2003" id="0">
+  <data key="d1">FOUNDED_IN</data>
+</edge>
+<edge source="Palantir Technologies" target="Peter Thiel" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Palantir Technologies" target="Alex Karp" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Palantir Technologies" target="Joe Lonsdale" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Palantir Technologies" target="Stephen Cohen" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Palantir Technologies" target="Nathan Gettings" id="0">
+  <data key="d1">FOUNDED_BY</data>
+</edge>
+<edge source="Palantir Technologies" target="Denver, Colorado" id="0">
+  <data key="d1">HEADQUARTERED_IN</data>
+</edge>
+<edge source="Palantir Technologies" target="AIP" id="0">
+  <data key="d1">RELEASED</data>
+</edge>
+<edge source="Palantir Technologies" target="Microsoft Azure" id="0">
+  <data key="d1">COLLABORATES_WITH</data>
+</edge>
+<edge source="Alex Karp" target="Palantir Technologies" id="0">
+  <data key="d1">CEO_OF</data>
+</edge>
+</graph></graphml>

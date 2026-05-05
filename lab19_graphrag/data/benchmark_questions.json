@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Who is the CEO of OpenAI?",
+    "type": "single",
+    "ground_truth": "Sam Altman is the CEO of OpenAI."
+  },
+  {
+    "id": 2,
+    "question": "In what year was Anthropic founded?",
+    "type": "single",
+    "ground_truth": "Anthropic was founded in 2021."
+  },
+  {
+    "id": 3,
+    "question": "Where is NVIDIA headquartered?",
+    "type": "single",
+    "ground_truth": "NVIDIA is headquartered in Santa Clara, California."
+  },
+  {
+    "id": 4,
+    "question": "What AI model did Stability AI release in 2022?",
+    "type": "single",
+    "ground_truth": "Stability AI released Stable Diffusion in 2022."
+  },
+  {
+    "id": 5,
+    "question": "Who founded Mistral AI?",
+    "type": "single",
+    "ground_truth": "Mistral AI was founded by Arthur Mensch, Guillaume Lample, and Timothée Lacroix."
+  },
+  {
+    "id": 6,
+    "question": "Which company acquired DeepMind, and who founded DeepMind?",
+    "type": "multi",
+    "ground_truth": "Google acquired DeepMind. DeepMind was founded by Demis Hassabis, Shane Legg, and Mustafa Suleyman."
+  },
+  {
+    "id": 7,
+    "question": "Who is the CEO of the company that acquired DeepMind?",
+    "type": "multi",
+    "ground_truth": "Google acquired DeepMind. The CEO of Google is Sundar Pichai."
+  },
+  {
+    "id": 8,
+    "question": "Which company invested in Anthropic, and who is the CEO of that investing company?",
+    "type": "multi",
+    "ground_truth": "Google and Amazon invested in Anthropic. The CEO of Google is Sundar Pichai and the CEO of Amazon is Andy Jassy."
+  },
+  {
+    "id": 9,
+    "question": "What product did the company that invested in OpenAI release in 2023?",
+    "type": "multi",
+    "ground_truth": "Microsoft invested in OpenAI. Microsoft released Copilot in 2023."
+  },
+  {
+    "id": 10,
+    "question": "Who co-founded OpenAI and later founded a competing AI company?",
+    "type": "multi",
+    "ground_truth": "Elon Musk co-founded OpenAI and later founded xAI, which competes with OpenAI."
+  },
+  {
+    "id": 11,
+    "question": "What chip did NVIDIA release that is used to train large language models like those made by OpenAI?",
+    "type": "multi",
+    "ground_truth": "NVIDIA released the H100 GPU in 2022, which is the dominant chip for training large language models."
+  },
+  {
+    "id": 12,
+    "question": "Who founded the company that is a subsidiary of Google and released AlphaFold?",
+    "type": "multi",
+    "ground_truth": "DeepMind is a subsidiary of Google. DeepMind was founded by Demis Hassabis, Shane Legg, and Mustafa Suleyman. DeepMind released AlphaFold in 2020."
+  },
+  {
+    "id": 13,
+    "question": "What open-source library did the company that Google invested in release, and what is that library used for?",
+    "type": "multi",
+    "ground_truth": "Google invested in Hugging Face. Hugging Face released the Transformers library, which is used for natural language processing."
+  },
+  {
+    "id": 14,
+    "question": "Which company did Microsoft acquire in 2018, and who is the CEO of Microsoft?",
+    "type": "multi",
+    "ground_truth": "Microsoft acquired GitHub in 2018. The CEO of Microsoft is Satya Nadella."
+  },
+  {
+    "id": 15,
+    "question": "Who is the CEO of the company that founded Anthropic, considering that Dario Amodei was a former researcher at OpenAI?",
+    "type": "multi",
+    "ground_truth": "Dario Amodei is the CEO of Anthropic, which he co-founded after leaving OpenAI."
+  },
+  {
+    "id": 16,
+    "question": "Did OpenAI acquire Google in 2023?",
+    "type": "trick",
+    "ground_truth": "I don't know / No, this information is not in the corpus. OpenAI did not acquire Google."
+  },
+  {
+    "id": 17,
+    "question": "Who is the CEO of Anthropic's parent company?",
+    "type": "trick",
+    "ground_truth": "I don't know. The corpus does not indicate that Anthropic has a parent company; it is an independent company with investors including Google and Amazon."
+  },
+  {
+    "id": 18,
+    "question": "What programming language did DeepMind invent?",
+    "type": "trick",
+    "ground_truth": "I don't know. The corpus does not mention DeepMind inventing any programming language."
+  },
+  {
+    "id": 19,
+    "question": "How much revenue did NVIDIA earn in 2023?",
+    "type": "trick",
+    "ground_truth": "I don't know. The corpus does not contain NVIDIA's revenue figures."
+  },
+  {
+    "id": 20,
+    "question": "Which company that competed with NVIDIA released a GPU in 2023, and who is the CEO of that GPU company's competitor that invested in OpenAI?",
+    "type": "multi",
+    "ground_truth": "AMD, which competes with NVIDIA, released the MI300X GPU in 2023. Microsoft also invested in OpenAI and Satya Nadella is the CEO of Microsoft."
+  }
+]

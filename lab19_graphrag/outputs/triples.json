@@ -1,0 +1,1522 @@
+[
+  {
+    "subject": "OpenAI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2015",
+    "object_type": "Year",
+    "source_chunk_id": 0
+  },
+  {
+    "subject": "OpenAI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Sam Altman",
+    "object_type": "Person",
+    "source_chunk_id": 0
+  },
+  {
+    "subject": "OpenAI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Greg Brockman",
+    "object_type": "Person",
+    "source_chunk_id": 0
+  },
+  {
+    "subject": "OpenAI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Ilya Sutskever",
+    "object_type": "Person",
+    "source_chunk_id": 0
+  },
+  {
+    "subject": "OpenAI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Elon Musk",
+    "object_type": "Person",
+    "source_chunk_id": 0
+  },
+  {
+    "subject": "OpenAI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Wojciech Zaremba",
+    "object_type": "Person",
+    "source_chunk_id": 0
+  },
+  {
+    "subject": "OpenAI",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "San Francisco, California",
+    "object_type": "Location",
+    "source_chunk_id": 0
+  },
+  {
+    "subject": "Sam Altman",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "OpenAI",
+    "object_type": "Organization",
+    "source_chunk_id": 0
+  },
+  {
+    "subject": "OpenAI",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "GPT-4",
+    "object_type": "Product",
+    "source_chunk_id": 0
+  },
+  {
+    "subject": "GPT-4",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "2023",
+    "object_type": "Year",
+    "source_chunk_id": 0
+  },
+  {
+    "subject": "OpenAI",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "ChatGPT",
+    "object_type": "Product",
+    "source_chunk_id": 0
+  },
+  {
+    "subject": "ChatGPT",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "2022",
+    "object_type": "Year",
+    "source_chunk_id": 0
+  },
+  {
+    "subject": "Google",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "1998",
+    "object_type": "Year",
+    "source_chunk_id": 1
+  },
+  {
+    "subject": "Google",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Larry Page",
+    "object_type": "Person",
+    "source_chunk_id": 1
+  },
+  {
+    "subject": "Google",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Sergey Brin",
+    "object_type": "Person",
+    "source_chunk_id": 1
+  },
+  {
+    "subject": "Google",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Mountain View, California",
+    "object_type": "Location",
+    "source_chunk_id": 1
+  },
+  {
+    "subject": "Sundar Pichai",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "Google",
+    "object_type": "Organization",
+    "source_chunk_id": 1
+  },
+  {
+    "subject": "Google",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Bard AI assistant",
+    "object_type": "Product",
+    "source_chunk_id": 1
+  },
+  {
+    "subject": "Bard AI assistant",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "2023",
+    "object_type": "Year",
+    "source_chunk_id": 1
+  },
+  {
+    "subject": "Google",
+    "subject_type": "Organization",
+    "relation": "ACQUIRED",
+    "object": "DeepMind",
+    "object_type": "Organization",
+    "source_chunk_id": 1
+  },
+  {
+    "subject": "DeepMind",
+    "subject_type": "Organization",
+    "relation": "SUBSIDIARY_OF",
+    "object": "Google",
+    "object_type": "Organization",
+    "source_chunk_id": 1
+  },
+  {
+    "subject": "Google",
+    "subject_type": "Organization",
+    "relation": "ACQUIRED",
+    "object": "one of the world's leading AI research labs",
+    "object_type": "Organization",
+    "source_chunk_id": 1
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "1975",
+    "object_type": "Year",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Bill Gates",
+    "object_type": "Person",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Paul Allen",
+    "object_type": "Person",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Redmond, Washington",
+    "object_type": "Location",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Satya Nadella",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "Microsoft",
+    "object_type": "Organization",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "OpenAI",
+    "object_type": "Organization",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Copilot",
+    "object_type": "Product",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "ACQUIRED",
+    "object": "LinkedIn",
+    "object_type": "Organization",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "ACQUIRED",
+    "object": "GitHub",
+    "object_type": "Organization",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "2019",
+    "object_type": "Year",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Office 365",
+    "object_type": "Product",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Copilot",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "2023",
+    "object_type": "Year",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "ACQUIRED",
+    "object": "2016",
+    "object_type": "Year",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "ACQUIRED",
+    "object": "2018",
+    "object_type": "Year",
+    "source_chunk_id": 2
+  },
+  {
+    "subject": "Apple",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "1976",
+    "object_type": "Year",
+    "source_chunk_id": 3
+  },
+  {
+    "subject": "Apple",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Steve Jobs",
+    "object_type": "Person",
+    "source_chunk_id": 3
+  },
+  {
+    "subject": "Apple",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Steve Wozniak",
+    "object_type": "Person",
+    "source_chunk_id": 3
+  },
+  {
+    "subject": "Apple",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Ronald Wayne",
+    "object_type": "Person",
+    "source_chunk_id": 3
+  },
+  {
+    "subject": "Apple",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Cupertino",
+    "object_type": "Location",
+    "source_chunk_id": 3
+  },
+  {
+    "subject": "Apple",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "California",
+    "object_type": "Location",
+    "source_chunk_id": 3
+  },
+  {
+    "subject": "Tim Cook",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "Apple",
+    "object_type": "Organization",
+    "source_chunk_id": 3
+  },
+  {
+    "subject": "Apple",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Apple Intelligence",
+    "object_type": "Product",
+    "source_chunk_id": 3
+  },
+  {
+    "subject": "Apple",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "2024",
+    "object_type": "Year",
+    "source_chunk_id": 3
+  },
+  {
+    "subject": "Apple",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "Google",
+    "object_type": "Organization",
+    "source_chunk_id": 3
+  },
+  {
+    "subject": "Apple",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "Microsoft",
+    "object_type": "Organization",
+    "source_chunk_id": 3
+  },
+  {
+    "subject": "Meta Platforms",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2004",
+    "object_type": "Year",
+    "source_chunk_id": 4
+  },
+  {
+    "subject": "Meta Platforms",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Mark Zuckerberg",
+    "object_type": "Person",
+    "source_chunk_id": 4
+  },
+  {
+    "subject": "Meta Platforms",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Menlo Park, California",
+    "object_type": "Location",
+    "source_chunk_id": 4
+  },
+  {
+    "subject": "Mark Zuckerberg",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "Meta Platforms",
+    "object_type": "Organization",
+    "source_chunk_id": 4
+  },
+  {
+    "subject": "Meta Platforms",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Llama family of open-source large language models",
+    "object_type": "Product",
+    "source_chunk_id": 4
+  },
+  {
+    "subject": "Meta Platforms",
+    "subject_type": "Organization",
+    "relation": "ACQUIRED",
+    "object": "Instagram",
+    "object_type": "Organization",
+    "source_chunk_id": 4
+  },
+  {
+    "subject": "Meta Platforms",
+    "subject_type": "Organization",
+    "relation": "ACQUIRED",
+    "object": "WhatsApp",
+    "object_type": "Organization",
+    "source_chunk_id": 4
+  },
+  {
+    "subject": "Meta Platforms",
+    "subject_type": "Organization",
+    "relation": "COLLABORATES_WITH",
+    "object": "FAIR",
+    "object_type": "Organization",
+    "source_chunk_id": 4
+  },
+  {
+    "subject": "Anthropic",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2021",
+    "object_type": "Year",
+    "source_chunk_id": 5
+  },
+  {
+    "subject": "Anthropic",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Dario Amodei",
+    "object_type": "Person",
+    "source_chunk_id": 5
+  },
+  {
+    "subject": "Anthropic",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Daniela Amodei",
+    "object_type": "Person",
+    "source_chunk_id": 5
+  },
+  {
+    "subject": "Anthropic",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "San Francisco, California",
+    "object_type": "Location",
+    "source_chunk_id": 5
+  },
+  {
+    "subject": "Dario Amodei",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "Anthropic",
+    "object_type": "Organization",
+    "source_chunk_id": 5
+  },
+  {
+    "subject": "Anthropic",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Claude family of large language models",
+    "object_type": "Product",
+    "source_chunk_id": 5
+  },
+  {
+    "subject": "Claude 3 Opus",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "2024",
+    "object_type": "Year",
+    "source_chunk_id": 5
+  },
+  {
+    "subject": "Google",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "Anthropic",
+    "object_type": "Organization",
+    "source_chunk_id": 5
+  },
+  {
+    "subject": "Anthropic",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "2023",
+    "object_type": "Year",
+    "source_chunk_id": 5
+  },
+  {
+    "subject": "Amazon",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "Anthropic",
+    "object_type": "Organization",
+    "source_chunk_id": 5
+  },
+  {
+    "subject": "NVIDIA",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "1993",
+    "object_type": "Year",
+    "source_chunk_id": 6
+  },
+  {
+    "subject": "NVIDIA",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Jensen Huang",
+    "object_type": "Person",
+    "source_chunk_id": 6
+  },
+  {
+    "subject": "NVIDIA",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Chris Malachowsky",
+    "object_type": "Person",
+    "source_chunk_id": 6
+  },
+  {
+    "subject": "NVIDIA",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Curtis Priem",
+    "object_type": "Person",
+    "source_chunk_id": 6
+  },
+  {
+    "subject": "NVIDIA",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Santa Clara, California",
+    "object_type": "Location",
+    "source_chunk_id": 6
+  },
+  {
+    "subject": "Jensen Huang",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "NVIDIA",
+    "object_type": "Organization",
+    "source_chunk_id": 6
+  },
+  {
+    "subject": "NVIDIA",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "H100 GPU",
+    "object_type": "Product",
+    "source_chunk_id": 6
+  },
+  {
+    "subject": "H100 GPU",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "2022",
+    "object_type": "Year",
+    "source_chunk_id": 6
+  },
+  {
+    "subject": "NVIDIA",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "AMD",
+    "object_type": "Organization",
+    "source_chunk_id": 6
+  },
+  {
+    "subject": "NVIDIA",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "Intel",
+    "object_type": "Organization",
+    "source_chunk_id": 6
+  },
+  {
+    "subject": "DeepMind",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2010",
+    "object_type": "Year",
+    "source_chunk_id": 7
+  },
+  {
+    "subject": "DeepMind",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Demis Hassabis",
+    "object_type": "Person",
+    "source_chunk_id": 7
+  },
+  {
+    "subject": "DeepMind",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Shane Legg",
+    "object_type": "Person",
+    "source_chunk_id": 7
+  },
+  {
+    "subject": "DeepMind",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Mustafa Suleyman",
+    "object_type": "Person",
+    "source_chunk_id": 7
+  },
+  {
+    "subject": "DeepMind",
+    "subject_type": "Organization",
+    "relation": "ACQUIRED",
+    "object": "Google",
+    "object_type": "Organization",
+    "source_chunk_id": 7
+  },
+  {
+    "subject": "DeepMind",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "London, United Kingdom",
+    "object_type": "Location",
+    "source_chunk_id": 7
+  },
+  {
+    "subject": "Demis Hassabis",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "DeepMind",
+    "object_type": "Organization",
+    "source_chunk_id": 7
+  },
+  {
+    "subject": "DeepMind",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "AlphaFold",
+    "object_type": "Product",
+    "source_chunk_id": 7
+  },
+  {
+    "subject": "AlphaFold",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "2020",
+    "object_type": "Year",
+    "source_chunk_id": 7
+  },
+  {
+    "subject": "DeepMind",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "AlphaGo",
+    "object_type": "Product",
+    "source_chunk_id": 7
+  },
+  {
+    "subject": "AlphaGo",
+    "subject_type": "Product",
+    "relation": "COMPETES_WITH",
+    "object": "world champion",
+    "object_type": "Person",
+    "source_chunk_id": 7
+  },
+  {
+    "subject": "AlphaGo",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "2016",
+    "object_type": "Year",
+    "source_chunk_id": 7
+  },
+  {
+    "subject": "Amazon Web Services",
+    "subject_type": "Organization",
+    "relation": "SUBSIDIARY_OF",
+    "object": "Amazon",
+    "object_type": "Organization",
+    "source_chunk_id": 8
+  },
+  {
+    "subject": "Amazon",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "1994",
+    "object_type": "Year",
+    "source_chunk_id": 8
+  },
+  {
+    "subject": "Amazon",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Jeff Bezos",
+    "object_type": "Person",
+    "source_chunk_id": 8
+  },
+  {
+    "subject": "Amazon",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Seattle, Washington",
+    "object_type": "Location",
+    "source_chunk_id": 8
+  },
+  {
+    "subject": "Andy Jassy",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "Amazon",
+    "object_type": "Organization",
+    "source_chunk_id": 8
+  },
+  {
+    "subject": "AWS",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "Anthropic",
+    "object_type": "Organization",
+    "source_chunk_id": 8
+  },
+  {
+    "subject": "AWS",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Bedrock",
+    "object_type": "Product",
+    "source_chunk_id": 8
+  },
+  {
+    "subject": "Bedrock",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "2023",
+    "object_type": "Year",
+    "source_chunk_id": 8
+  },
+  {
+    "subject": "Mistral AI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2023",
+    "object_type": "Year",
+    "source_chunk_id": 9
+  },
+  {
+    "subject": "Mistral AI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Arthur Mensch",
+    "object_type": "Person",
+    "source_chunk_id": 9
+  },
+  {
+    "subject": "Mistral AI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Guillaume Lample",
+    "object_type": "Person",
+    "source_chunk_id": 9
+  },
+  {
+    "subject": "Mistral AI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Timothée Lacroix",
+    "object_type": "Person",
+    "source_chunk_id": 9
+  },
+  {
+    "subject": "Mistral AI",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Paris, France",
+    "object_type": "Location",
+    "source_chunk_id": 9
+  },
+  {
+    "subject": "Arthur Mensch",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "Mistral AI",
+    "object_type": "Organization",
+    "source_chunk_id": 9
+  },
+  {
+    "subject": "Mistral AI",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Mistral 7B",
+    "object_type": "Product",
+    "source_chunk_id": 9
+  },
+  {
+    "subject": "Mistral AI",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "2023",
+    "object_type": "Year",
+    "source_chunk_id": 9
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "Mistral AI",
+    "object_type": "Organization",
+    "source_chunk_id": 9
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "2024",
+    "object_type": "Year",
+    "source_chunk_id": 9
+  },
+  {
+    "subject": "xAI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2023",
+    "object_type": "Year",
+    "source_chunk_id": 10
+  },
+  {
+    "subject": "xAI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Elon Musk",
+    "object_type": "Person",
+    "source_chunk_id": 10
+  },
+  {
+    "subject": "xAI",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Palo Alto, California",
+    "object_type": "Location",
+    "source_chunk_id": 10
+  },
+  {
+    "subject": "Elon Musk",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "xAI",
+    "object_type": "Organization",
+    "source_chunk_id": 10
+  },
+  {
+    "subject": "xAI",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Grok",
+    "object_type": "Product",
+    "source_chunk_id": 10
+  },
+  {
+    "subject": "xAI",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "OpenAI",
+    "object_type": "Organization",
+    "source_chunk_id": 10
+  },
+  {
+    "subject": "OpenAI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2018",
+    "object_type": "Year",
+    "source_chunk_id": 10
+  },
+  {
+    "subject": "Cohere",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2019",
+    "object_type": "Year",
+    "source_chunk_id": 11
+  },
+  {
+    "subject": "Cohere",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Aidan Gomez",
+    "object_type": "Person",
+    "source_chunk_id": 11
+  },
+  {
+    "subject": "Cohere",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Ivan Zhang",
+    "object_type": "Person",
+    "source_chunk_id": 11
+  },
+  {
+    "subject": "Cohere",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Nick Frosst",
+    "object_type": "Person",
+    "source_chunk_id": 11
+  },
+  {
+    "subject": "Cohere",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Toronto, Canada",
+    "object_type": "Location",
+    "source_chunk_id": 11
+  },
+  {
+    "subject": "Aidan Gomez",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "Cohere",
+    "object_type": "Organization",
+    "source_chunk_id": 11
+  },
+  {
+    "subject": "Cohere",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Command R series",
+    "object_type": "Product",
+    "source_chunk_id": 11
+  },
+  {
+    "subject": "Command R series",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "2024",
+    "object_type": "Year",
+    "source_chunk_id": 11
+  },
+  {
+    "subject": "Stability AI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2019",
+    "object_type": "Year",
+    "source_chunk_id": 12
+  },
+  {
+    "subject": "Stability AI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Emad Mostaque",
+    "object_type": "Person",
+    "source_chunk_id": 12
+  },
+  {
+    "subject": "Stability AI",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "London, United Kingdom",
+    "object_type": "Location",
+    "source_chunk_id": 12
+  },
+  {
+    "subject": "Stability AI",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Stable Diffusion",
+    "object_type": "Product",
+    "source_chunk_id": 12
+  },
+  {
+    "subject": "Stable Diffusion",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "2022",
+    "object_type": "Year",
+    "source_chunk_id": 12
+  },
+  {
+    "subject": "Stability AI",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "Midjourney",
+    "object_type": "Organization",
+    "source_chunk_id": 12
+  },
+  {
+    "subject": "Stability AI",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "DALL-E",
+    "object_type": "Product",
+    "source_chunk_id": 12
+  },
+  {
+    "subject": "DALL-E",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "OpenAI",
+    "object_type": "Organization",
+    "source_chunk_id": 12
+  },
+  {
+    "subject": "OpenAI",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "DALL-E",
+    "object_type": "Product",
+    "source_chunk_id": 12
+  },
+  {
+    "subject": "DALL-E",
+    "subject_type": "Product",
+    "relation": "RELEASED",
+    "object": "2021",
+    "object_type": "Year",
+    "source_chunk_id": 12
+  },
+  {
+    "subject": "Hugging Face",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2016",
+    "object_type": "Year",
+    "source_chunk_id": 13
+  },
+  {
+    "subject": "Hugging Face",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Clément Delangue",
+    "object_type": "Person",
+    "source_chunk_id": 13
+  },
+  {
+    "subject": "Hugging Face",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Julien Chaumond",
+    "object_type": "Person",
+    "source_chunk_id": 13
+  },
+  {
+    "subject": "Hugging Face",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Thomas Wolf",
+    "object_type": "Person",
+    "source_chunk_id": 13
+  },
+  {
+    "subject": "Hugging Face",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "New York, United States",
+    "object_type": "Location",
+    "source_chunk_id": 13
+  },
+  {
+    "subject": "Google",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "Hugging Face",
+    "object_type": "Organization",
+    "source_chunk_id": 13
+  },
+  {
+    "subject": "Salesforce",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "Hugging Face",
+    "object_type": "Organization",
+    "source_chunk_id": 13
+  },
+  {
+    "subject": "Amazon",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "Hugging Face",
+    "object_type": "Organization",
+    "source_chunk_id": 13
+  },
+  {
+    "subject": "Hugging Face",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Transformers library",
+    "object_type": "Product",
+    "source_chunk_id": 13
+  },
+  {
+    "subject": "Intel",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "1968",
+    "object_type": "Year",
+    "source_chunk_id": 14
+  },
+  {
+    "subject": "Intel",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Robert Noyce",
+    "object_type": "Person",
+    "source_chunk_id": 14
+  },
+  {
+    "subject": "Intel",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Gordon Moore",
+    "object_type": "Person",
+    "source_chunk_id": 14
+  },
+  {
+    "subject": "Intel",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Santa Clara, California",
+    "object_type": "Location",
+    "source_chunk_id": 14
+  },
+  {
+    "subject": "Pat Gelsinger",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "Intel",
+    "object_type": "Organization",
+    "source_chunk_id": 14
+  },
+  {
+    "subject": "Intel",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "NVIDIA",
+    "object_type": "Organization",
+    "source_chunk_id": 14
+  },
+  {
+    "subject": "Intel",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "AMD",
+    "object_type": "Organization",
+    "source_chunk_id": 14
+  },
+  {
+    "subject": "Intel",
+    "subject_type": "Organization",
+    "relation": "ACQUIRED",
+    "object": "Habana Labs",
+    "object_type": "Organization",
+    "source_chunk_id": 14
+  },
+  {
+    "subject": "Intel",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "Gaudi series of AI accelerators",
+    "object_type": "Product",
+    "source_chunk_id": 14
+  },
+  {
+    "subject": "NVIDIA",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "Gaudi series of AI accelerators",
+    "object_type": "Product",
+    "source_chunk_id": 14
+  },
+  {
+    "subject": "AMD",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "1969",
+    "object_type": "Year",
+    "source_chunk_id": 15
+  },
+  {
+    "subject": "AMD",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Jerry Sanders",
+    "object_type": "Person",
+    "source_chunk_id": 15
+  },
+  {
+    "subject": "AMD",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Santa Clara, California",
+    "object_type": "Location",
+    "source_chunk_id": 15
+  },
+  {
+    "subject": "Lisa Su",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "AMD",
+    "object_type": "Organization",
+    "source_chunk_id": 15
+  },
+  {
+    "subject": "AMD",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "MI300X GPU",
+    "object_type": "Product",
+    "source_chunk_id": 15
+  },
+  {
+    "subject": "AMD",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "NVIDIA",
+    "object_type": "Organization",
+    "source_chunk_id": 15
+  },
+  {
+    "subject": "AMD",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "Intel",
+    "object_type": "Organization",
+    "source_chunk_id": 15
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "AMD",
+    "object_type": "Organization",
+    "source_chunk_id": 15
+  },
+  {
+    "subject": "Meta",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "AMD",
+    "object_type": "Organization",
+    "source_chunk_id": 15
+  },
+  {
+    "subject": "Samsung Electronics",
+    "subject_type": "Organization",
+    "relation": "SUBSIDIARY_OF",
+    "object": "Samsung Group",
+    "object_type": "Organization",
+    "source_chunk_id": 16
+  },
+  {
+    "subject": "Samsung",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Suwon, South Korea",
+    "object_type": "Location",
+    "source_chunk_id": 16
+  },
+  {
+    "subject": "Samsung",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "TSMC",
+    "object_type": "Organization",
+    "source_chunk_id": 16
+  },
+  {
+    "subject": "Samsung",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "Intel",
+    "object_type": "Organization",
+    "source_chunk_id": 16
+  },
+  {
+    "subject": "Samsung",
+    "subject_type": "Organization",
+    "relation": "ACQUIRED",
+    "object": "Harman International",
+    "object_type": "Organization",
+    "source_chunk_id": 16
+  },
+  {
+    "subject": "Samsung",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2017",
+    "object_type": "Year",
+    "source_chunk_id": 16
+  },
+  {
+    "subject": "Baidu",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2000",
+    "object_type": "Year",
+    "source_chunk_id": 17
+  },
+  {
+    "subject": "Baidu",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Robin Li",
+    "object_type": "Person",
+    "source_chunk_id": 17
+  },
+  {
+    "subject": "Baidu",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Eric Xu",
+    "object_type": "Person",
+    "source_chunk_id": 17
+  },
+  {
+    "subject": "Baidu",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Beijing, China",
+    "object_type": "Location",
+    "source_chunk_id": 17
+  },
+  {
+    "subject": "Robin Li",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "Baidu",
+    "object_type": "Organization",
+    "source_chunk_id": 17
+  },
+  {
+    "subject": "Baidu",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "ERNIE Bot",
+    "object_type": "Product",
+    "source_chunk_id": 17
+  },
+  {
+    "subject": "Baidu",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "2023",
+    "object_type": "Year",
+    "source_chunk_id": 17
+  },
+  {
+    "subject": "Baidu",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "Google",
+    "object_type": "Organization",
+    "source_chunk_id": 17
+  },
+  {
+    "subject": "Baidu",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "OpenAI",
+    "object_type": "Organization",
+    "source_chunk_id": 17
+  },
+  {
+    "subject": "Scale AI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2016",
+    "object_type": "Year",
+    "source_chunk_id": 18
+  },
+  {
+    "subject": "Scale AI",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Alexandr Wang",
+    "object_type": "Person",
+    "source_chunk_id": 18
+  },
+  {
+    "subject": "Scale AI",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "San Francisco, California",
+    "object_type": "Location",
+    "source_chunk_id": 18
+  },
+  {
+    "subject": "Alexandr Wang",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "Scale AI",
+    "object_type": "Organization",
+    "source_chunk_id": 18
+  },
+  {
+    "subject": "Microsoft",
+    "subject_type": "Organization",
+    "relation": "INVESTED_IN",
+    "object": "Scale AI",
+    "object_type": "Organization",
+    "source_chunk_id": 18
+  },
+  {
+    "subject": "Scale AI",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "Appen",
+    "object_type": "Organization",
+    "source_chunk_id": 18
+  },
+  {
+    "subject": "Scale AI",
+    "subject_type": "Organization",
+    "relation": "COMPETES_WITH",
+    "object": "Labelbox",
+    "object_type": "Organization",
+    "source_chunk_id": 18
+  },
+  {
+    "subject": "Palantir Technologies",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_IN",
+    "object": "2003",
+    "object_type": "Year",
+    "source_chunk_id": 19
+  },
+  {
+    "subject": "Palantir Technologies",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Peter Thiel",
+    "object_type": "Person",
+    "source_chunk_id": 19
+  },
+  {
+    "subject": "Palantir Technologies",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Alex Karp",
+    "object_type": "Person",
+    "source_chunk_id": 19
+  },
+  {
+    "subject": "Palantir Technologies",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Joe Lonsdale",
+    "object_type": "Person",
+    "source_chunk_id": 19
+  },
+  {
+    "subject": "Palantir Technologies",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Stephen Cohen",
+    "object_type": "Person",
+    "source_chunk_id": 19
+  },
+  {
+    "subject": "Palantir Technologies",
+    "subject_type": "Organization",
+    "relation": "FOUNDED_BY",
+    "object": "Nathan Gettings",
+    "object_type": "Person",
+    "source_chunk_id": 19
+  },
+  {
+    "subject": "Palantir Technologies",
+    "subject_type": "Organization",
+    "relation": "HEADQUARTERED_IN",
+    "object": "Denver, Colorado",
+    "object_type": "Location",
+    "source_chunk_id": 19
+  },
+  {
+    "subject": "Alex Karp",
+    "subject_type": "Person",
+    "relation": "CEO_OF",
+    "object": "Palantir Technologies",
+    "object_type": "Organization",
+    "source_chunk_id": 19
+  },
+  {
+    "subject": "Palantir Technologies",
+    "subject_type": "Organization",
+    "relation": "RELEASED",
+    "object": "AIP",
+    "object_type": "Product",
+    "source_chunk_id": 19
+  },
+  {
+    "subject": "Palantir Technologies",
+    "subject_type": "Organization",
+    "relation": "COLLABORATES_WITH",
+    "object": "Microsoft Azure",
+    "object_type": "Organization",
+    "source_chunk_id": 19
+  }
+]
