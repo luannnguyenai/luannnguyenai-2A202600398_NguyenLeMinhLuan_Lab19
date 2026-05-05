@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Who is the CEO of OpenAI?",
+    "type": "single",
+    "hops": 1,
+    "ground_truth": "Sam Altman is the CEO of OpenAI."
+  },
+  {
+    "id": 2,
+    "question": "What year was Google founded?",
+    "type": "single",
+    "hops": 1,
+    "ground_truth": "Google was founded in 1998."
+  },
+  {
+    "id": 3,
+    "question": "Who is the CEO of NVIDIA?",
+    "type": "single",
+    "hops": 1,
+    "ground_truth": "Jensen Huang is the CEO of NVIDIA."
+  },
+  {
+    "id": 4,
+    "question": "When was DeepMind founded?",
+    "type": "single",
+    "hops": 1,
+    "ground_truth": "DeepMind was founded in 2010."
+  },
+  {
+    "id": 5,
+    "question": "In what year was Anthropic founded?",
+    "type": "single",
+    "hops": 1,
+    "ground_truth": "Anthropic was founded in 2021."
+  },
+  {
+    "id": 6,
+    "question": "Who is the CEO of the company that acquired DeepMind?",
+    "type": "multi",
+    "hops": 2,
+    "ground_truth": "Google acquired DeepMind, and Sundar Pichai is the CEO of Google."
+  },
+  {
+    "id": 7,
+    "question": "Who founded the company that invested in Anthropic?",
+    "type": "multi",
+    "hops": 2,
+    "ground_truth": "Google invested in Anthropic, which was founded by Dario Amodei and others."
+  },
+  {
+    "id": 8,
+    "question": "Which company did the founder of xAI co-found?",
+    "type": "multi",
+    "hops": 2,
+    "ground_truth": "Elon Musk founded xAI and co-founded OpenAI."
+  },
+  {
+    "id": 9,
+    "question": "What was released in 2023 by the company with CEO Jensen Huang?",
+    "type": "multi",
+    "hops": 2,
+    "ground_truth": "Jensen Huang is CEO of NVIDIA, which released the H100 GPU in 2022."
+  },
+  {
+    "id": 10,
+    "question": "Who founded Meta Platforms?",
+    "type": "multi",
+    "hops": 2,
+    "ground_truth": "Mark Zuckerberg founded Meta Platforms and is its CEO."
+  },
+  {
+    "id": 11,
+    "question": "Who founded the company that Microsoft invested in?",
+    "type": "multi",
+    "hops": 3,
+    "ground_truth": "Microsoft invested in Mistral AI, which was founded by Arthur Mensch, Guillaume Lample, and Timoth\u00e9e Lacroix."
+  },
+  {
+    "id": 12,
+    "question": "What is the headquarters location of the company that Google acquired?",
+    "type": "multi",
+    "hops": 3,
+    "ground_truth": "Google acquired DeepMind, which is headquartered in London, United Kingdom."
+  },
+  {
+    "id": 13,
+    "question": "Who is the CEO of the company that released Copilot?",
+    "type": "multi",
+    "hops": 3,
+    "ground_truth": "Microsoft released Copilot in 2023, and Satya Nadella is the CEO of Microsoft."
+  },
+  {
+    "id": 14,
+    "question": "Which company that invested in Anthropic has a CEO with the first name Sundar?",
+    "type": "multi",
+    "hops": 3,
+    "ground_truth": "Google invested in Anthropic, and Sundar Pichai is the CEO of Google."
+  },
+  {
+    "id": 15,
+    "question": "Who founded Dario Amodei's company after he left his previous employer?",
+    "type": "multi",
+    "hops": 3,
+    "ground_truth": "Dario Amodei left OpenAI and founded Anthropic with Daniela Amodei and others."
+  },
+  {
+    "id": 16,
+    "question": "Who founded the company that competes with the company Elon Musk co-founded?",
+    "type": "multi",
+    "hops": 4,
+    "ground_truth": "Elon Musk co-founded OpenAI; xAI competes with OpenAI; xAI was founded by Elon Musk."
+  },
+  {
+    "id": 17,
+    "question": "What was released in 2024 by a company that Google invested in?",
+    "type": "multi",
+    "hops": 4,
+    "ground_truth": "Google invested in Anthropic in 2023; Anthropic released Claude 3 Opus in 2024."
+  },
+  {
+    "id": 18,
+    "question": "Who is the CEO of the company that released the first model mentioned in the tech industry?",
+    "type": "multi",
+    "hops": 4,
+    "ground_truth": "OpenAI released ChatGPT in 2022; Sam Altman is the CEO of OpenAI."
+  },
+  {
+    "id": 19,
+    "question": "Which company founded in the 1960s released a GPU in 2023?",
+    "type": "multi",
+    "hops": 4,
+    "ground_truth": "AMD was founded in 1969 and released the MI300X GPU in 2023."
+  },
+  {
+    "id": 20,
+    "question": "What model did the company that Amazon invested in release in 2024?",
+    "type": "multi",
+    "hops": 4,
+    "ground_truth": "Amazon invested in Anthropic; Anthropic released Claude 3 Opus in 2024."
+  }
+]

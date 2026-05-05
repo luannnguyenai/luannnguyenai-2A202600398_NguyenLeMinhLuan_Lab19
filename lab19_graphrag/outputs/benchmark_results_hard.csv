@@ -1,0 +1,21 @@
+id,question,type,hops,ground_truth,flat_answer,graph_answer,flat_correct,graph_correct,flat_tokens,graph_tokens,flat_latency_ms,graph_latency_ms
+1,Who is the CEO of OpenAI?,single,1,Sam Altman is the CEO of OpenAI.,Sam Altman is the CEO of OpenAI.,I don't know.,True,True,154,1408,1598.8,1220.2
+2,What year was Google founded?,single,1,Google was founded in 1998.,1998,2014,True,False,121,1407,955.3,1272.6
+3,Who is the CEO of NVIDIA?,single,1,Jensen Huang is the CEO of NVIDIA.,Jensen Huang is the CEO of NVIDIA.,Jensen Huang,True,True,136,1374,931.3,1426.6
+4,When was DeepMind founded?,single,1,DeepMind was founded in 2010.,DeepMind was founded in 2010.,2010,True,True,137,1410,876.0,1336.3
+5,In what year was Anthropic founded?,single,1,Anthropic was founded in 2021.,2021,2021,True,True,126,1412,1064.3,1533.4
+6,Who is the CEO of the company that acquired DeepMind?,multi,2,"Google acquired DeepMind, and Sundar Pichai is the CEO of Google.",I don't know.,Sundar Pichai,True,True,140,1420,1130.1,1674.6
+7,Who founded the company that invested in Anthropic?,multi,2,"Google invested in Anthropic, which was founded by Dario Amodei and others.",I don't know.,Amazon founded the company that invested in Anthropic.,True,False,130,1422,1011.2,1455.5
+8,Which company did the founder of xAI co-found?,multi,2,Elon Musk founded xAI and co-founded OpenAI.,I don't know.,I don't know.,True,True,126,1423,903.2,1200.7
+9,What was released in 2023 by the company with CEO Jensen Huang?,multi,2,"Jensen Huang is CEO of NVIDIA, which released the H100 GPU in 2022.",I don't know.,H100 GPU,True,False,139,1382,1028.2,1335.7
+10,Who founded Meta Platforms?,multi,2,Mark Zuckerberg founded Meta Platforms and is its CEO.,Mark Zuckerberg founded Meta.,I don't know.,True,True,119,1355,1387.2,1445.4
+11,Who founded the company that Microsoft invested in?,multi,3,"Microsoft invested in Mistral AI, which was founded by Arthur Mensch, Guillaume Lample, and Timothée Lacroix.",I don't know.,I don't know.,True,True,127,96,927.8,1346.7
+12,What is the headquarters location of the company that Google acquired?,multi,3,"Google acquired DeepMind, which is headquartered in London, United Kingdom.",I don't know.,I don't know.,True,True,129,99,995.7,1806.7
+13,Who is the CEO of the company that released Copilot?,multi,3,"Microsoft released Copilot in 2023, and Satya Nadella is the CEO of Microsoft.",I don't know.,Satya Nadella,True,True,131,1397,1160.8,1419.2
+14,Which company that invested in Anthropic has a CEO with the first name Sundar?,multi,3,"Google invested in Anthropic, and Sundar Pichai is the CEO of Google.",I don't know.,I don't know.,True,True,152,1423,962.4,2616.6
+15,Who founded Dario Amodei's company after he left his previous employer?,multi,3,Dario Amodei left OpenAI and founded Anthropic with Daniela Amodei and others.,"Dario Amodei and Daniela Amodei, along with former OpenAI researchers, founded Anthropic.",Dario Amodei founded Anthropic.,True,False,164,1417,1133.0,1555.1
+16,Who founded the company that competes with the company Elon Musk co-founded?,multi,4,Elon Musk co-founded OpenAI; xAI competes with OpenAI; xAI was founded by Elon Musk.,I don't know.,"Wojciech Zaremba founded OpenAI, the company that competes with xAI, which was co-founded by Elon Musk.",True,False,131,1432,997.0,2240.7
+17,What was released in 2024 by a company that Google invested in?,multi,4,Google invested in Anthropic in 2023; Anthropic released Claude 3 Opus in 2024.,I don't know.,I don't know.,True,True,136,102,1073.1,1215.1
+18,Who is the CEO of the company that released the first model mentioned in the tech industry?,multi,4,OpenAI released ChatGPT in 2022; Sam Altman is the CEO of OpenAI.,I don't know.,I don't know.,True,True,136,105,1025.5,1484.7
+19,Which company founded in the 1960s released a GPU in 2023?,multi,4,AMD was founded in 1969 and released the MI300X GPU in 2023.,I don't know.,AMD,True,True,139,1382,947.1,1482.8
+20,What model did the company that Amazon invested in release in 2024?,multi,4,Amazon invested in Anthropic; Anthropic released Claude 3 Opus in 2024.,I don't know.,I don't know.,True,True,133,102,889.7,1309.8

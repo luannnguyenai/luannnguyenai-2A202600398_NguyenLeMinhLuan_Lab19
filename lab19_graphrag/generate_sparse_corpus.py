@@ -1,0 +1,293 @@
+#!/usr/bin/env python3
+"""Generate sparse corpus with isolated atomic facts + distractors for hard experiment."""
+
+from pathlib import Path
+
+# Core facts extracted as ISOLATED atomic sentences
+# Each fact mentions only one company, forcing facts to be in separate paragraphs
+ATOMIC_FACTS = [
+    # OpenAI (isolated)
+    "OpenAI was founded in 2015.",
+    "Sam Altman, Greg Brockman, Ilya Sutskever, Elon Musk, and Wojciech Zaremba founded OpenAI.",
+    "OpenAI has its headquarters in San Francisco, California.",
+    "Sam Altman is the CEO of OpenAI.",
+    "OpenAI released GPT-4 in 2023.",
+    "OpenAI released ChatGPT in 2022.",
+
+    # Google (isolated)
+    "Google was founded in 1998.",
+    "Larry Page and Sergey Brin founded Google.",
+    "Google is headquartered in Mountain View, California.",
+    "Sundar Pichai is the CEO of Google.",
+    "Google released Bard, later rebranded as Gemini, in 2023.",
+
+    # DeepMind (isolated)
+    "DeepMind was founded in 2010.",
+    "Demis Hassabis, Shane Legg, and Mustafa Suleyman founded DeepMind.",
+    "DeepMind is headquartered in London, United Kingdom.",
+    "Demis Hassabis is the CEO of DeepMind.",
+    "DeepMind released AlphaFold in 2020.",
+    "DeepMind developed AlphaGo.",
+    "DeepMind is a subsidiary of Google.", # Relationship stated separately
+
+    # Microsoft (isolated)
+    "Microsoft was founded in 1975.",
+    "Bill Gates and Paul Allen founded Microsoft.",
+    "Microsoft is headquartered in Redmond, Washington.",
+    "Satya Nadella is the CEO of Microsoft.",
+    "Microsoft released Copilot in 2023.",
+    "Microsoft acquired LinkedIn in 2016.",
+    "Microsoft acquired GitHub in 2018.",
+
+    # Apple (isolated)
+    "Apple was founded in 1976.",
+    "Steve Jobs, Steve Wozniak, and Ronald Wayne founded Apple.",
+    "Apple is headquartered in Cupertino, California.",
+    "Tim Cook is the CEO of Apple.",
+    "Apple released Apple Intelligence in 2024.",
+
+    # Meta (isolated)
+    "Meta Platforms was founded in 2004.",
+    "Mark Zuckerberg founded Meta.",
+    "Meta is headquartered in Menlo Park, California.",
+    "Mark Zuckerberg is the CEO of Meta.",
+    "Meta released the Llama family of models in 2023.",
+    "Meta acquired Instagram in 2012.",
+    "Meta acquired WhatsApp in 2014.",
+
+    # Anthropic (isolated)
+    "Anthropic was founded in 2021.",
+    "Dario Amodei and Daniela Amodei, along with former OpenAI researchers, founded Anthropic.",
+    "Anthropic is headquartered in San Francisco, California.",
+    "Dario Amodei is the CEO of Anthropic.",
+    "Anthropic released Claude 3 Opus in 2024.",
+
+    # NVIDIA (isolated)
+    "NVIDIA was founded in 1993.",
+    "Jensen Huang, Chris Malachowsky, and Curtis Priem founded NVIDIA.",
+    "NVIDIA is headquartered in Santa Clara, California.",
+    "Jensen Huang is the CEO of NVIDIA.",
+    "NVIDIA released the H100 GPU in 2022.",
+
+    # Amazon (isolated)
+    "Amazon was founded in 1994.",
+    "Jeff Bezos founded Amazon.",
+    "Amazon is headquartered in Seattle, Washington.",
+    "Andy Jassy is the CEO of Amazon.",
+    "Amazon Web Services is a subsidiary of Amazon.",
+    "Amazon released Bedrock in 2023.",
+
+    # Mistral AI (isolated)
+    "Mistral AI was founded in 2023.",
+    "Arthur Mensch, Guillaume Lample, and Timothée Lacroix founded Mistral AI.",
+    "Mistral AI is headquartered in Paris, France.",
+    "Arthur Mensch is the CEO of Mistral AI.",
+    "Mistral AI released Mistral 7B in 2023.",
+
+    # xAI (isolated)
+    "xAI was founded in 2023.",
+    "Elon Musk founded xAI.",
+    "xAI is headquartered in Palo Alto, California.",
+    "Elon Musk is the CEO of xAI.",
+    "xAI released Grok in 2023.",
+
+    # Cohere (isolated)
+    "Cohere was founded in 2019.",
+    "Aidan Gomez, Ivan Zhang, and Nick Frosst founded Cohere.",
+    "Cohere is headquartered in Toronto, Canada.",
+    "Aidan Gomez is the CEO of Cohere.",
+    "Cohere released Command R series in 2024.",
+
+    # Stability AI (isolated)
+    "Stability AI was founded in 2019.",
+    "Emad Mostaque founded Stability AI.",
+    "Stability AI is headquartered in London, United Kingdom.",
+    "Stability AI released Stable Diffusion in 2022.",
+
+    # Hugging Face (isolated)
+    "Hugging Face was founded in 2016.",
+    "Clément Delangue, Julien Chaumond, and Thomas Wolf founded Hugging Face.",
+    "Hugging Face is headquartered in New York, United States.",
+    "Hugging Face released the Transformers library.",
+
+    # Intel (isolated)
+    "Intel was founded in 1968.",
+    "Robert Noyce and Gordon Moore founded Intel.",
+    "Intel is headquartered in Santa Clara, California.",
+    "Pat Gelsinger is the CEO of Intel.",
+    "Intel acquired Habana Labs in 2019.",
+    "Intel released the Gaudi series of AI accelerators.",
+
+    # AMD (isolated)
+    "AMD was founded in 1969.",
+    "Jerry Sanders founded AMD.",
+    "AMD is headquartered in Santa Clara, California.",
+    "Lisa Su is the CEO of AMD.",
+    "AMD released the MI300X GPU in 2023.",
+
+    # Samsung (isolated)
+    "Samsung Electronics is a subsidiary of Samsung Group.",
+    "Samsung is headquartered in Suwon, South Korea.",
+    "Samsung produces semiconductors including NAND and DRAM.",
+
+    # Baidu (isolated)
+    "Baidu was founded in 2000.",
+    "Robin Li and Eric Xu founded Baidu.",
+    "Baidu is headquartered in Beijing, China.",
+    "Robin Li is the CEO of Baidu.",
+    "Baidu released ERNIE Bot in 2023.",
+
+    # Scale AI (isolated)
+    "Scale AI was founded in 2016.",
+    "Alexandr Wang founded Scale AI.",
+    "Scale AI is headquartered in San Francisco, California.",
+    "Alexandr Wang is the CEO of Scale AI.",
+
+    # Palantir (isolated)
+    "Palantir Technologies was founded in 2003.",
+    "Peter Thiel, Alex Karp, Joe Lonsdale, Stephen Cohen, and Nathan Gettings founded Palantir.",
+    "Palantir is headquartered in Denver, Colorado.",
+    "Alex Karp is the CEO of Palantir.",
+    "Palantir released AIP in 2023.",
+
+    # Relationships (each mentioned in separate paragraphs)
+    "Google acquired DeepMind in 2014.",
+    "Microsoft invested in OpenAI starting in 2019.",
+    "Google invested in Anthropic in 2023.",
+    "Amazon invested in Anthropic in 2023.",
+    "Elon Musk was a co-founder of OpenAI.",
+    "xAI competes with OpenAI.",
+    "Microsoft invested in Mistral AI in 2024.",
+    "Google invested in Hugging Face in 2023.",
+]
+
+# Distractor paragraphs with vocabulary overlap but no useful signal
+DISTRACTORS = [
+    # AI/ML research papers and conferences
+    "The NeurIPS conference brings together machine learning researchers from around the world.",
+    "Transformer architectures have revolutionized natural language processing since 2017.",
+    "Attention mechanisms enable models to focus on relevant parts of input sequences.",
+    "Backpropagation is a fundamental algorithm for training neural networks.",
+    "Gradient descent optimization helps models converge to better solutions.",
+    "Embeddings map text into high-dimensional vector spaces for semantic similarity.",
+    "The MNIST dataset has been used to benchmark thousands of machine learning models.",
+    "Convolutional neural networks excel at image recognition tasks.",
+    "Recurrent neural networks process sequences of variable length.",
+    "Self-supervised learning reduces the need for labeled training data.",
+    "Federated learning trains models across distributed data sources.",
+    "Reinforcement learning agents learn through interaction with environments.",
+    "Generative models can create novel data similar to training distributions.",
+    "Discriminative models classify or rank existing data points.",
+    "Ensemble methods combine multiple models to improve performance.",
+
+    # Cloud computing and infrastructure
+    "Cloud providers offer computing resources on demand through web interfaces.",
+    "Kubernetes orchestrates containerized applications at scale.",
+    "Docker containers package applications with their dependencies.",
+    "Load balancers distribute traffic across multiple servers.",
+    "CDNs cache content geographically for faster delivery.",
+    "Edge computing brings computation closer to data sources.",
+    "Microservices architecture breaks monolithic applications into small services.",
+    "API gateways manage and route API requests.",
+    "Message queues enable asynchronous communication between services.",
+    "Distributed systems must handle failures gracefully.",
+    "Consensus algorithms like RAFT ensure consistency across nodes.",
+    "Database sharding distributes data across multiple partitions.",
+    "Caching layers reduce latency by storing frequently accessed data.",
+    "Rate limiting protects services from overload.",
+    "Monitoring and observability track system health.",
+
+    # General startup and technology commentary
+    "Startup accelerators help founders validate their ideas quickly.",
+    "Venture capital funds companies with high growth potential.",
+    "Unicorns are privately held companies valued above one billion dollars.",
+    "Series A, B, and C rounds represent different funding stages.",
+    "IPOs allow companies to raise capital from public markets.",
+    "Acquisitions consolidate market share and intellectual property.",
+    "Product-market fit occurs when a product meets real customer demand.",
+    "Network effects increase a product's value as more users join.",
+    "Viral growth reduces customer acquisition costs significantly.",
+    "Technical debt accumulates when prioritizing speed over code quality.",
+    "Agile methodology emphasizes iterative development and feedback.",
+    "DevOps practices integrate development and operations teams.",
+    "CI/CD pipelines automate testing and deployment.",
+    "Security vulnerabilities in popular libraries affect many projects.",
+    "Open source communities collaborate to build shared infrastructure.",
+
+    # Hardware and chip design
+    "Semiconductor manufacturing requires billions in capital investment.",
+    "Process nodes measure the smallest feature size on a chip.",
+    "Moore's Law describes exponential growth in transistor density.",
+    "Heat dissipation challenges intensify at smaller process nodes.",
+    "GPU design balances throughput with memory bandwidth.",
+    "Tensor cores accelerate matrix multiplication operations.",
+    "Systolic arrays process data in a grid pattern efficiently.",
+    "Memory bandwidth is often the bottleneck in workloads.",
+    "Cache hierarchies reduce memory access latency.",
+    "Branch prediction speculatively executes instructions.",
+    "Out-of-order execution increases instruction level parallelism.",
+    "SIMD instructions process multiple data elements in parallel.",
+    "Floating point precision affects model accuracy and stability.",
+    "Quantization reduces model size without severe accuracy loss.",
+    "Pruning removes unimportant connections from networks.",
+
+    # More AI/tech distractors without specific signals
+    "Graph neural networks model relationships between entities.",
+    "Knowledge graphs organize information as interconnected facts.",
+    "Semantic search matches queries based on meaning not keywords.",
+    "Question answering systems retrieve relevant information.",
+    "Information retrieval ranks documents by relevance.",
+    "Named entity recognition identifies people, organizations, and places.",
+    "Sentiment analysis determines emotional tone in text.",
+    "Machine translation converts text between languages.",
+    "Speech recognition transcribes audio to text.",
+    "Computer vision analyzes images and videos.",
+    "Object detection identifies specific items in images.",
+    "Semantic segmentation classifies pixels into categories.",
+    "Transfer learning reuses trained models on new tasks.",
+    "Few-shot learning trains models with limited examples.",
+    "Zero-shot learning applies models to unseen classes.",
+
+    # More infrastructure and systems
+    "Blockchain technology creates immutable distributed ledgers.",
+    "Consensus mechanisms prevent double-spending in cryptocurrencies.",
+    "Smart contracts execute automatically when conditions are met.",
+    "Decentralized systems eliminate single points of failure.",
+    "Byzantine fault tolerance handles adversarial failures.",
+    "Sharding partitions systems for higher throughput.",
+    "Sidechains enable faster transactions off the main chain.",
+    "Liquidity pools enable decentralized token exchanges.",
+    "Oracles provide external data to blockchain systems.",
+    "Rollups bundle transactions off-chain for efficiency.",
+    "State channels enable fast microtransactions.",
+    "Atomic swaps allow peer-to-peer asset exchange.",
+    "Hash functions create fixed-size digests of data.",
+    "Merkle trees efficiently prove data inclusion.",
+    "Zero-knowledge proofs verify facts without revealing details.",
+]
+
+def main():
+    # Write sparse corpus
+    sparse_corpus_path = Path("data/sparse_corpus.txt")
+
+    paragraphs = []
+
+    # Add atomic facts
+    for fact in ATOMIC_FACTS:
+        paragraphs.append(fact)
+
+    # Add distractors
+    paragraphs.extend(DISTRACTORS)
+
+    # Write to file
+    corpus_text = "\n\n".join(paragraphs)
+    sparse_corpus_path.write_text(corpus_text, encoding="utf-8")
+
+    print(f"Generated sparse_corpus.txt:")
+    print(f"  Atomic facts: {len(ATOMIC_FACTS)}")
+    print(f"  Distractors: {len(DISTRACTORS)}")
+    print(f"  Total paragraphs: {len(paragraphs)}")
+    print(f"  Saved to: {sparse_corpus_path}")
+
+if __name__ == "__main__":
+    main()

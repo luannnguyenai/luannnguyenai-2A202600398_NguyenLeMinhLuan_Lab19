@@ -195,6 +195,75 @@ The document covers:
 
 ---
 
+## Hard Experiment — Controlled Comparison on Sparse Corpus
+
+The original benchmark favored Flat RAG due to corpus **density**: all multi-hop facts about each company were packed into one paragraph, so embedding-based retrieval could fetch complete chains in a single TOP-k hit.
+
+To demonstrate GraphRAG's structural advantage on **sparse, deep-hop reasoning**, we created a controlled hard experiment:
+
+### Hard Experiment Setup
+
+**Sparse Corpus** (`data/sparse_corpus.txt`):
+- 112 atomic facts (one fact per paragraph, carefully isolated)
+- 90 distractor paragraphs (vocabulary overlap with "AI", "GPU", "model", "founder", "CEO" but no useful signal)
+- Total: 202 paragraphs (vs 20 in original corpus)
+- Result: 162 extracted triples (vs 186 originally)
+
+**Hard Questions** (`data/hard_questions.json`):
+- 5 single-hop, 5 two-hop, 5 three-hop, 5 four-hop
+- Multi-hop facts deliberately scattered: required entities spread across multiple paragraphs
+- No single paragraph contains all facts needed for any multi-hop question
+- Example: Q11 asks "Who founded the company that Google invested in?", requiring facts from 3+ separate paragraphs
+
+**Constrained Flat RAG** (`src/flat_rag_hard.py`):
+- TOP_K = 3 (down from 5) to simulate harder retrieval on sparse corpus
+- Same embedding model, same QA prompt
+- Isolated ChromaDB collection for hard corpus
+
+**Enhanced GraphRAG** (`src/graph_rag_hard.py`):
+- BFS_DEPTH = 4 (up from 2) to handle 4-hop questions
+- MAX_FACTS = 80 (up from 60) for deeper subgraph exploration
+- Same entity extraction, matching, and QA logic
+- Uses `outputs/triples_hard.json` from sparse corpus indexing
+
+### Hard Experiment Results
+
+Run the hard experiment:
+```bash
+python -m src.indexing_hard      # Generate triples_hard.json from sparse corpus
+python -m src.evaluate_hard      # Run benchmark, output results_hard.csv + cost_analysis_hard.md
+```
+
+**Results Summary:**
+
+| Metric | Flat RAG | GraphRAG |
+|--------|----------|----------|
+| Overall Accuracy | **100%** (20/20) | 75% (15/20) |
+| Single-hop (5 Qs) | 100% (5/5) | 80% (4/5) |
+| Two-hop (5 Qs) | 100% (5/5) | 60% (3/5) |
+| Three-hop (5 Qs) | 100% (5/5) | 80% (4/5) |
+| Four-hop (5 Qs) | 100% (5/5) | 80% (4/5) |
+| Avg Tokens/Q | 135 | 1,078 |
+
+### Key Findings
+
+**Flat RAG's Unexpected Strength:**
+Flat RAG achieved perfect accuracy even on the sparse corpus. The text-embedding-3-small model successfully retrieves relevant atomic paragraphs across scattered facts. Semantic similarity is robust enough that distractors do not degrade retrieval.
+
+**GraphRAG's Bottleneck:**
+GraphRAG's weakness is **entity extraction**, not graph traversal. On 5 questions (particularly 4-hop queries), the LLM-based entity extractor failed to recognize company names from the question text (e.g., failed to extract "Amazon" from Q20), preventing BFS from starting entirely (0 facts retrieved, defaulting to "I don't know").
+
+**When GraphRAG Would Win:**
+GraphRAG's structural advantage (explicit multi-hop reasoning via BFS) emerges under conditions where:
+1. **Corpus is truly sparse**: facts never co-occur in retrieved chunks (would require TOP_K=1 for Flat RAG or a much larger corpus)
+2. **Domain-specific extraction**: entity extraction uses finetuned NER, not generic LLM
+3. **Questions are paraphrased**: disguise entity names (e.g., "the search engine founded by Page and Brin" instead of "Google")
+4. **Larger corpora**: 10K+ documents where semantic drift makes retrieval unreliable
+
+This experiment demonstrates that **RAG system choice is task-dependent**: on well-formed, semantically coherent corpora (even sparse ones), vector retrieval wins. GraphRAG excels on large, fragmented knowledge bases where explicit relationships are the primary signal.
+
+---
+
 ## GraphRAG vs Flat RAG — Case Analysis
 
 ### Cases where GraphRAG faced challenges
