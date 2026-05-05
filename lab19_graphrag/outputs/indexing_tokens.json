@@ -1,0 +1,8 @@
+{
+  "stage": "indexing",
+  "prompt": 14075,
+  "completion": 7604,
+  "total": 21679,
+  "latency_ms_total": 158449.58820499995,
+  "calls": 20
+}

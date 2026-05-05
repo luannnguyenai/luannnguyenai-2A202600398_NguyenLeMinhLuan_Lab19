@@ -227,7 +227,7 @@ def run_indexing() -> list[dict[str, str]]:
     TRIPLES_PATH.write_text(json.dumps(deduped, indent=2, ensure_ascii=False), encoding="utf-8")
     logger.info("Saved triples to %s", TRIPLES_PATH)
 
-    # Print token summary
+    # Print token summary and cache indexing tokens for warm runs
     by_stage = TRACKER.tokens_by_stage()
     if "indexing" in by_stage:
         s = by_stage["indexing"]
@@ -235,6 +235,19 @@ def run_indexing() -> list[dict[str, str]]:
             "Indexing token usage — prompt: %d, completion: %d, total: %d",
             s["prompt"], s["completion"], s["total"],
         )
+
+        # Save indexing tokens to cache for evaluate.py (warm runs)
+        indexing_cache = {
+            "stage": "indexing",
+            "prompt": s["prompt"],
+            "completion": s["completion"],
+            "total": s["total"],
+            "latency_ms_total": sum(r.latency_ms for r in TRACKER.records if r.stage == "indexing"),
+            "calls": sum(1 for r in TRACKER.records if r.stage == "indexing"),
+        }
+        cache_path = OUTPUT_DIR / "indexing_tokens.json"
+        cache_path.write_text(json.dumps(indexing_cache, indent=2), encoding="utf-8")
+        logger.info("Saved indexing tokens cache to %s", cache_path)
 
     return deduped
 

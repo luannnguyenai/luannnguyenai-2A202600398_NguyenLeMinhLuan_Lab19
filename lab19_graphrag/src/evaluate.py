@@ -23,6 +23,7 @@ from src.utils.llm_client import get_client, TRACKER
 from src.utils.prompts import build_judge_messages
 from src.flat_rag import build_flat_index, query_flat_rag
 from src.graph_rag import query_graph_rag
+from src.indexing import run_indexing
 
 # ---------------------------------------------------------------------------
 # Config
@@ -31,6 +32,8 @@ from src.graph_rag import query_graph_rag
 ROOT = Path(__file__).resolve().parent.parent
 QUESTIONS_PATH = ROOT / "data" / "benchmark_questions.json"
 OUTPUT_DIR = ROOT / "outputs"
+TRIPLES_PATH = OUTPUT_DIR / "triples.json"
+INDEXING_TOKENS_CACHE = OUTPUT_DIR / "indexing_tokens.json"
 CSV_PATH = OUTPUT_DIR / "benchmark_results.csv"
 COST_PATH = OUTPUT_DIR / "cost_analysis.md"
 
@@ -88,6 +91,34 @@ def run_evaluation() -> list[dict[str, Any]]:
     Returns list of result dicts.
     """
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Handle indexing: either run it now (cold) or replay cached tokens (warm)
+    if not TRIPLES_PATH.exists():
+        logger.info("Triples not found; running indexing first...")
+        run_indexing()
+    else:
+        logger.info("Triples already exist; checking for cached indexing tokens...")
+        if INDEXING_TOKENS_CACHE.exists():
+            logger.info("Found cached indexing tokens; replaying into tracker...")
+            try:
+                cache_data = json.loads(INDEXING_TOKENS_CACHE.read_text(encoding="utf-8"))
+                TRACKER.replay(
+                    stage=cache_data.get("stage", "indexing"),
+                    prompt_tokens=cache_data.get("prompt", 0),
+                    completion_tokens=cache_data.get("completion", 0),
+                    latency_ms=cache_data.get("latency_ms_total", 0.0),
+                    calls=cache_data.get("calls", 1),
+                )
+                logger.info("Replayed indexing tokens: %d prompt + %d completion",
+                            cache_data.get("prompt", 0), cache_data.get("completion", 0))
+            except (json.JSONDecodeError, KeyError, ValueError) as e:
+                logger.warning("Failed to parse indexing cache: %s. Skipping replay.", e)
+        else:
+            logger.warning(
+                "Triples exist but indexing_tokens.json is missing. "
+                "Indexing cost will not be included in cost analysis. "
+                "Run 'python -m src.indexing' to regenerate the cache."
+            )
 
     # Load questions
     with QUESTIONS_PATH.open(encoding="utf-8") as fh:

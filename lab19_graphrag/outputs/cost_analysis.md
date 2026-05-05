@@ -9,39 +9,39 @@
 
 | Stage | Prompt Tokens | Completion Tokens | Total |
 |-------|--------------|-------------------|-------|
-| evaluation | 9,749 | 1,113 | 10,862 |
-| flat_rag_indexing | 1,782 | 0 | 1,782 |
-| flat_rag_query | 11,732 | 276 | 12,008 |
-| graph_rag_entity_extraction | 1,701 | 146 | 1,847 |
-| graph_rag_query | 18,752 | 226 | 18,978 |
-| **GRAND TOTAL** | — | — | **45,477** |
+| evaluation | 9,535 | 1,090 | 10,625 |
+| flat_rag_query | 11,701 | 228 | 11,929 |
+| graph_rag_entity_extraction | 1,687 | 137 | 1,824 |
+| graph_rag_query | 16,341 | 119 | 16,460 |
+| indexing | 14,075 | 7,604 | 21,679 |
+| **GRAND TOTAL** | — | — | **62,517** |
 
 ## Estimated Cost (USD)
 
 | Component | USD |
 |-----------|-----|
-| Indexing (LLM) | $0.0000 |
+| Indexing (LLM) | $0.0067 |
 | Embedding (indexing) | $0.0000 |
-| **Total** | **$0.0076** |
+| **Total** | **$0.0135** |
 
 ## Benchmark Results Summary
 
 | Metric | Flat RAG | GraphRAG |
 |--------|----------|----------|
 | Questions | 20 | 20 |
-| Correct | 18 (90.0%) | 13 (65.0%) |
-| Avg tokens / question | 586 | 949 |
-| Avg latency / question | 1466 ms | 2092 ms |
+| Correct | 19 (95.0%) | 16 (80.0%) |
+| Avg tokens / question | 583 | 823 |
+| Avg latency / question | 1404 ms | 1750 ms |
 
 ## Average Latency by Stage
 
 | Stage | Avg Latency (ms) |
 |-------|------------------|
-| evaluation | 1270 |
-| flat_rag_indexing | 3474 |
-| flat_rag_query | 731 |
-| graph_rag_entity_extraction | 941 |
-| graph_rag_query | 1149 |
+| evaluation | 1098 |
+| flat_rag_query | 699 |
+| graph_rag_entity_extraction | 862 |
+| graph_rag_query | 887 |
+| indexing | 7922 |
 
 ---
 *Generated automatically by `src/evaluate.py`*

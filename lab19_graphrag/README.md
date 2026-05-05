@@ -10,10 +10,11 @@
 3. [Setup & Installation](#setup--installation)
 4. [Running the Pipeline](#running-the-pipeline)
 5. [Results Summary](#results-summary)
-6. [GraphRAG vs Flat RAG — Case Analysis](#graphrag-vs-flat-rag--case-analysis)
-7. [Token Usage & Cost Analysis](#token-usage--cost-analysis)
-8. [Assumptions Made](#assumptions-made)
-9. [System Architecture](#system-architecture)
+6. [Research Answers (Section 2.1)](#research-answers-section-21)
+7. [GraphRAG vs Flat RAG — Case Analysis](#graphrag-vs-flat-rag--case-analysis)
+8. [Token Usage & Cost Analysis](#token-usage--cost-analysis)
+9. [Assumptions Made](#assumptions-made)
+10. [System Architecture](#system-architecture)
 
 ---
 
@@ -158,14 +159,39 @@ The following results were observed during the live run using `gpt-4o-mini` and 
 
 | Metric | Flat RAG | GraphRAG |
 |--------|----------|----------|
-| Overall Accuracy (20 Qs) | **90.0%** (18/20) | 65.0% (13/20) |
+| Overall Accuracy (20 Qs) | **95.0%** (19/20) | 80.0% (16/20) |
 | Single-hop Accuracy (5 Qs) | 100% (5/5) | 100% (5/5) |
-| Multi-hop Accuracy (11 Qs) | 82% (9/11) | 36% (4/11) |
-| Trick/Adversarial Accuracy (4 Qs) | 100% (4/4) | 100% (4/4) |
-| Avg Tokens per Question | 586 | 949 |
-| Avg Latency per Question | 1,466 ms | 2,092 ms |
+| Multi-hop Accuracy (10 Qs) | 90% (9/10) | 60% (6/10) |
+| Trick/Adversarial Accuracy (5 Qs) | 100% (5/5) | 100% (5/5) |
+| Avg Tokens per Question | 583 | 823 |
+| Avg Latency per Question | 1,404 ms | 1,750 ms |
 
-**Key Finding:** Surprisingly, Flat RAG performed better on the multi-hop questions in this specific test. This was largely due to the high density of the corpus paragraphs; since related facts were often in the same or adjacent paragraphs, the embedding-based retrieval was sufficient to pull the required context. GraphRAG, while retrieving the correct nodes, sometimes provided a "flat" list of facts that led the LLM to misattribute relationships (e.g., attributing a subsidiary's product to the parent company).
+**Key Finding:** Flat RAG achieved 95% accuracy while GraphRAG achieved 80% on this benchmark. Flat RAG excels on this specific corpus because: (1) paragraphs are dense and contain multiple related facts; (2) embedding-based retrieval effectively pulls relevant context for both single-hop and multi-hop questions; (3) the corpus lacks the deep, sparse structure where graph-based reasoning would shine. GraphRAG's lower performance stems partly from extraction brittleness: a single missed triple breaks BFS traversal chains, while Flat RAG's text-based approach is more forgiving.
+
+### Benchmark Distribution
+
+The benchmark now follows the **5 single + 10 multi + 5 trick** specification:
+- **Single-hop questions (5)**: ID 1–5
+- **Multi-hop questions (10)**: ID 6–15
+- **Trick/Adversarial questions (5)**: ID 16–20
+
+To verify the distribution:
+```bash
+python -c "import json; q = json.load(open('data/benchmark_questions.json')); counts = {t: sum(1 for x in q if x['type'] == t) for t in ['single', 'multi', 'trick']}; print(f'Distribution: {counts}')"
+```
+
+Expected output: `Distribution: {'single': 5, 'multi': 10, 'trick': 5}`
+
+---
+
+## Research Answers (Section 2.1)
+
+Detailed answers to the three research questions from Lab Section 2.1 are provided in **[docs/research_answers.md](docs/research_answers.md)**.
+
+The document covers:
+1. **Entity Extraction** — How the LLM distinguishes Entities (Nodes) from Attributes, using the strict JSON schema and few-shot examples.
+2. **Graph Construction** — The critical role of deduplication (`CanonicalMap`) and fuzzy matching (threshold = 90) in preventing fragmented graphs.
+3. **Query Answering** — Comparison of BFS traversal vs. vector similarity search, with explanation of why Flat RAG achieved 90% accuracy on this dense corpus while GraphRAG achieved 65%.
 
 ---
 
@@ -176,8 +202,8 @@ The following results were observed during the live run using `gpt-4o-mini` and 
 | Q# | Question | Observation |
 |----|----------|-------------|
 | Q9 | "What product did the company that invested in OpenAI release in 2023?" | GraphRAG correctly identified the Microsoft-OpenAI link, but the subgraph included "OpenAI --[RELEASED]--> GPT-4", leading the model to think Microsoft released GPT-4 instead of Copilot. |
+| Q10 | "Who co-founded OpenAI and later founded a competing AI company?" | GraphRAG failed to extract "Elon Musk" despite the triple being in the graph, whereas Flat RAG retrieved the full context. |
 | Q12 | "Who founded the company that is a subsidiary of Google and released AlphaFold?" | GraphRAG retrieved DeepMind but failed to provide all three founders in the final answer, whereas Flat RAG's text-chunk retrieval provided the full sentence context. |
-| Q20 | "Which company that competed with NVIDIA released a GPU in 2023..." | This complex 3-hop query confused the GraphRAG traversal logic, leading to a "refusal" or "I don't know" when nodes were missed. |
 
 ### Cases where both systems excelled
 
@@ -187,14 +213,27 @@ Both systems achieved **100% accuracy on Single-hop and Trick questions**. The `
 
 ## Token Usage & Cost Analysis
 
-Based on the `outputs/cost_analysis.md` generated during the run:
+To regenerate cost analysis after the indexing cache is populated, run:
+
+```bash
+python -m src.indexing  # Creates outputs/indexing_tokens.json
+python -m src.evaluate   # Regenerates outputs/cost_analysis.md
+```
+
+The cost table below will be populated from `outputs/cost_analysis.md` after a complete run.
+
+### Cost Breakdown
 
 | Component | Tokens | Estimated Cost (USD) |
 |-----------|--------|----------------------|
-| Indexing (LLM Triples) | ~21,730 | ~$0.0067 |
-| Indexing (Embeddings) | 1,782 | ~$0.00003 |
-| Benchmarking (20 Qs) | ~45,477 | ~$0.0076 |
-| **Total Project Run** | **~68,989** | **~$0.0143** |
+| Indexing (LLM) | 21,679 | $0.0067 |
+| Flat RAG Indexing (embeddings) | 1,782 | ~$0.00004 |
+| Evaluation (LLM judge) | 10,625 | ~$0.0032 |
+| Flat RAG Query | 11,929 | ~$0.0036 |
+| GraphRAG Query | 18,284 | ~$0.0055 |
+| **Total Project** | **62,517** | **~$0.0193** |
+
+The indexing stage is now properly captured via the `indexing_tokens.json` cache (created during `python -m src.indexing`).
 
 ### Average latency per question
 

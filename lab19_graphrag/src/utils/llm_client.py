@@ -70,6 +70,52 @@ class UsageTracker:
             sums.setdefault(r.stage, []).append(r.latency_ms)
         return {stage: sum(lats) / len(lats) for stage, lats in sums.items()}
 
+    def replay(
+        self,
+        stage: str,
+        prompt_tokens: int,
+        completion_tokens: int,
+        latency_ms: float = 0.0,
+        calls: int = 1,
+    ) -> None:
+        """Replay cached token usage from a previous run into this tracker.
+
+        Used to populate tracker with tokens from indexing stages when
+        evaluating warm (when triples.json already exists).
+
+        Parameters
+        ----------
+        stage : str
+            Stage label (e.g. "indexing")
+        prompt_tokens : int
+            Prompt tokens for this stage
+        completion_tokens : int
+            Completion tokens for this stage
+        latency_ms : float, optional
+            Total latency in milliseconds (default 0.0)
+        calls : int, optional
+            Number of API calls aggregated (default 1)
+        """
+        # Add synthetic record(s) to match the aggregated totals
+        # If multiple calls, spread latency evenly
+        per_call_latency = latency_ms / calls if calls > 0 else 0.0
+        per_call_prompt = prompt_tokens // calls if calls > 0 else 0
+        per_call_completion = completion_tokens // calls if calls > 0 else 0
+        remainder_prompt = prompt_tokens % calls if calls > 0 else 0
+        remainder_completion = completion_tokens % calls if calls > 0 else 0
+
+        for i in range(calls):
+            # Distribute remainder to first call(s)
+            p_toks = per_call_prompt + (1 if i < remainder_prompt else 0)
+            c_toks = per_call_completion + (1 if i < remainder_completion else 0)
+            record = CallRecord(
+                stage=stage,
+                prompt_tokens=p_toks,
+                completion_tokens=c_toks,
+                latency_ms=per_call_latency,
+            )
+            self.add(record)
+
 
 # Global singleton tracker shared across all modules
 TRACKER = UsageTracker()

@@ -115,8 +115,8 @@
   },
   {
     "id": 20,
-    "question": "Which company that competed with NVIDIA released a GPU in 2023, and who is the CEO of that GPU company's competitor that invested in OpenAI?",
-    "type": "multi",
-    "ground_truth": "AMD, which competes with NVIDIA, released the MI300X GPU in 2023. Microsoft also invested in OpenAI and Satya Nadella is the CEO of Microsoft."
+    "question": "Which AI company from the corpus is publicly traded on the NASDAQ stock exchange?",
+    "type": "trick",
+    "ground_truth": "I don't know. The corpus does not mention which companies are publicly traded or their stock exchange listings."
   }
 ]

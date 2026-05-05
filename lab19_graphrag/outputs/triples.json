@@ -168,14 +168,6 @@
     "source_chunk_id": 1
   },
   {
-    "subject": "Google",
-    "subject_type": "Organization",
-    "relation": "ACQUIRED",
-    "object": "one of the world's leading AI research labs",
-    "object_type": "Organization",
-    "source_chunk_id": 1
-  },
-  {
     "subject": "Microsoft",
     "subject_type": "Organization",
     "relation": "FOUNDED_IN",
@@ -250,7 +242,7 @@
   {
     "subject": "Microsoft",
     "subject_type": "Organization",
-    "relation": "INVESTED_IN",
+    "relation": "FOUNDED_IN",
     "object": "2019",
     "object_type": "Year",
     "source_chunk_id": 2
@@ -264,8 +256,8 @@
     "source_chunk_id": 2
   },
   {
-    "subject": "Copilot",
-    "subject_type": "Product",
+    "subject": "Microsoft",
+    "subject_type": "Organization",
     "relation": "RELEASED",
     "object": "2023",
     "object_type": "Year",
@@ -634,16 +626,8 @@
   {
     "subject": "DeepMind",
     "subject_type": "Organization",
-    "relation": "ACQUIRED",
-    "object": "Google",
-    "object_type": "Organization",
-    "source_chunk_id": 7
-  },
-  {
-    "subject": "DeepMind",
-    "subject_type": "Organization",
     "relation": "HEADQUARTERED_IN",
-    "object": "London, United Kingdom",
+    "object": "London",
     "object_type": "Location",
     "source_chunk_id": 7
   },
@@ -690,7 +674,7 @@
   {
     "subject": "AlphaGo",
     "subject_type": "Product",
-    "relation": "RELEASED",
+    "relation": "ACQUIRED",
     "object": "2016",
     "object_type": "Year",
     "source_chunk_id": 7
@@ -1027,14 +1011,6 @@
     "subject": "OpenAI",
     "subject_type": "Organization",
     "relation": "RELEASED",
-    "object": "DALL-E",
-    "object_type": "Product",
-    "source_chunk_id": 12
-  },
-  {
-    "subject": "DALL-E",
-    "subject_type": "Product",
-    "relation": "RELEASED",
     "object": "2021",
     "object_type": "Year",
     "source_chunk_id": 12
@@ -1184,14 +1160,6 @@
     "source_chunk_id": 14
   },
   {
-    "subject": "NVIDIA",
-    "subject_type": "Organization",
-    "relation": "COMPETES_WITH",
-    "object": "Gaudi series of AI accelerators",
-    "object_type": "Product",
-    "source_chunk_id": 14
-  },
-  {
     "subject": "AMD",
     "subject_type": "Organization",
     "relation": "FOUNDED_IN",
@@ -1251,16 +1219,16 @@
     "subject": "Microsoft",
     "subject_type": "Organization",
     "relation": "INVESTED_IN",
-    "object": "AMD",
-    "object_type": "Organization",
+    "object": "AMD GPUs",
+    "object_type": "Product",
     "source_chunk_id": 15
   },
   {
     "subject": "Meta",
     "subject_type": "Organization",
     "relation": "INVESTED_IN",
-    "object": "AMD",
-    "object_type": "Organization",
+    "object": "AMD GPUs",
+    "object_type": "Product",
     "source_chunk_id": 15
   },
   {
