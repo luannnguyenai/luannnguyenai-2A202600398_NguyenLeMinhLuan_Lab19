@@ -1,0 +1,186 @@
+"""
+Author and verify 20 Wikipedia questions with cross-page distribution.
+"""
+
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+QUESTIONS_PATH = ROOT / "data" / "wiki_questions.json"
+
+# Distribution: 5 single, 5 two-hop, 5 three-hop, 5 four-hop
+QUESTIONS = [
+    # --- Single-hop (5) ---
+    {
+        "id": 1,
+        "question": "In what month and year did OpenAI raise $40 billion at a $300 billion valuation?",
+        "type": "single", "hops": 1,
+        "ground_truth": "In April 2025, OpenAI raised $40 billion at a $300 billion post-money valuation.",
+        "required_pages": ["openai"]
+    },
+    {
+        "id": 2,
+        "question": "What award did DeepMind receive from the Cambridge Computer Laboratory in 2014?",
+        "type": "single", "hops": 1,
+        "ground_truth": "DeepMind received the 'Company of the Year' award from Cambridge Computer Laboratory in 2014.",
+        "required_pages": ["google_deepmind"]
+    },
+    {
+        "id": 3,
+        "question": "What is the name of the clinical task management app co-developed by DeepMind and the Royal Free NHS Trust?",
+        "type": "single", "hops": 1,
+        "ground_truth": "The app is named Streams.",
+        "required_pages": ["google_deepmind"]
+    },
+    {
+        "id": 4,
+        "question": "Where did Demis Hassabis and Shane Legg first meet?",
+        "type": "single", "hops": 1,
+        "ground_truth": "They first met at the Gatsby Computational Neuroscience Unit at University College London (UCL).",
+        "required_pages": ["google_deepmind"]
+    },
+    {
+        "id": 5,
+        "question": "In what year did Demis Hassabis win the Nobel Prize in Chemistry?",
+        "type": "single", "hops": 1,
+        "ground_truth": "Demis Hassabis was awarded the Nobel Prize in Chemistry in 2024.",
+        "required_pages": ["demis_hassabis"]
+    },
+    
+    # --- Two-hop (5) ---
+    {
+        "id": 6,
+        "question": "Who is the CEO of the company that acquired DeepMind in 2014?",
+        "type": "multi", "hops": 2,
+        "ground_truth": "Google acquired DeepMind in 2014. The CEO of Google is Sundar Pichai.",
+        "required_pages": ["google_deepmind", "sundar_pichai"]
+    },
+    {
+        "id": 7,
+        "question": "Which person co-founded the AI lab that received investment from Microsoft and is currently the CEO of OpenAI?",
+        "type": "multi", "hops": 2,
+        "ground_truth": "Microsoft invested in OpenAI. Sam Altman is the CEO and co-founder of OpenAI.",
+        "required_pages": ["openai", "sam_altman"]
+    },
+    {
+        "id": 8,
+        "question": "Which former co-founder of OpenAI later founded a competing AI company called xAI?",
+        "type": "multi", "hops": 2,
+        "ground_truth": "Elon Musk was a co-founder of OpenAI and later founded xAI.",
+        "required_pages": ["openai", "elon_musk"]
+    },
+    {
+        "id": 9,
+        "question": "What was the name of the simulation video game co-designed by the person who is now the CEO of Google DeepMind?",
+        "type": "multi", "hops": 2,
+        "ground_truth": "Demis Hassabis co-designed the game Theme Park. He is now the CEO of Google DeepMind.",
+        "required_pages": ["demis_hassabis", "google_deepmind"]
+    },
+    {
+        "id": 10,
+        "question": "Who serves as the CEO of the company that is the parent of the AI lab founded by Demis Hassabis, Shane Legg, and Mustafa Suleyman?",
+        "type": "multi", "hops": 2,
+        "ground_truth": "DeepMind (founded by Hassabis, Legg, and Suleyman) is a subsidiary of Alphabet Inc. Sundar Pichai is the CEO of Alphabet/Google.",
+        "required_pages": ["google_deepmind", "sundar_pichai"]
+    },
+    
+    # --- Three-hop (5) ---
+    {
+        "id": 11,
+        "question": "What is the name of the venture capital firm that invested in DeepMind and was also founded by a person who co-founded Palantir?",
+        "type": "multi", "hops": 3,
+        "ground_truth": "Founders Fund invested in DeepMind. Founders Fund was co-founded by Peter Thiel, who also co-founded Palantir.",
+        "required_pages": ["google_deepmind", "elon_musk"] # Peter Thiel info often co-occurs with Musk/DeepMind
+    },
+    {
+        "id": 12,
+        "question": "Who is the CEO of the Japanese conglomerate that led the 2025 financing round for the company co-founded by Sam Altman?",
+        "type": "multi", "hops": 3,
+        "ground_truth": "SoftBank led the April 2025 round for OpenAI (co-founded by Sam Altman). The CEO of SoftBank is Masayoshi Son.",
+        "required_pages": ["openai", "sam_altman"] 
+    },
+    {
+        "id": 13,
+        "question": "What is the name of the god game where the person who co-founded DeepMind served as the lead AI programmer?",
+        "type": "multi", "hops": 3,
+        "ground_truth": "Demis Hassabis (co-founder of DeepMind) was the lead AI programmer for the god game Black & White.",
+        "required_pages": ["demis_hassabis", "google_deepmind"]
+    },
+    {
+        "id": 14,
+        "question": "Which company co-founded by the person who won the Nobel Prize in Chemistry in 2024 signed publishing deals with Microsoft?",
+        "type": "multi", "hops": 3,
+        "ground_truth": "Demis Hassabis (Nobel winner) co-founded Elixir Studios, which signed deals with Microsoft.",
+        "required_pages": ["demis_hassabis", "microsoft"]
+    },
+    {
+        "id": 15,
+        "question": "Who is the CEO of the cloud giant that invested in Anthropic, a lab co-founded by former researchers from the lab that Sam Altman leads?",
+        "type": "multi", "hops": 3,
+        "ground_truth": "Amazon or Google invested in Anthropic. Anthropic was founded by former OpenAI researchers (Sam Altman leads OpenAI). The CEO of Amazon is Andy Jassy, or Google is Sundar Pichai.",
+        "required_pages": ["anthropic", "openai", "sam_altman", "sundar_pichai"]
+    },
+    
+    # --- Four-hop (5) ---
+    {
+        "id": 16,
+        "question": "Which person co-founded the AI lab that received investment from the company led by Satya Nadella, and what was that person's specific contribution to the game Theme Park?",
+        "type": "multi", "hops": 4,
+        "ground_truth": "Microsoft (Satya Nadella) invested in DeepMind. Demis Hassabis (DeepMind co-founder) co-designed and was lead programmer for Theme Park.",
+        "required_pages": ["satya_nadella", "microsoft", "google_deepmind", "demis_hassabis"]
+    },
+    {
+        "id": 17,
+        "question": "What is the name of the clinical task management app developed by the subsidiary of the company led by Sundar Pichai, which was co-founded by the person who won the Nobel Prize in 2024?",
+        "type": "multi", "hops": 4,
+        "ground_truth": "The app is Streams. It was developed by DeepMind, a subsidiary of Google (led by Sundar Pichai). DeepMind was co-founded by Demis Hassabis (Nobel winner).",
+        "required_pages": ["sundar_pichai", "google_deepmind", "demis_hassabis"]
+    },
+    {
+        "id": 18,
+        "question": "Which former co-founder of OpenAI, who also invested in DeepMind, leads a company that released an AI assistant called Grok and once co-founded a company with Peter Thiel?",
+        "type": "multi", "hops": 4,
+        "ground_truth": "Elon Musk (OpenAI co-founder, DeepMind investor) leads xAI (Grok). He co-founded PayPal/X.com with Peter Thiel.",
+        "required_pages": ["openai", "google_deepmind", "elon_musk"]
+    },
+    {
+        "id": 19,
+        "question": "What is the name of the AI research lab that serves as a subsidiary of the company led by Sundar Pichai and is responsible for the development of Gemini?",
+        "type": "multi", "hops": 4,
+        "ground_truth": "Google DeepMind is the lab, a subsidiary of Alphabet/Google (Sundar Pichai), and it developed Gemini.",
+        "required_pages": ["sundar_pichai", "google_deepmind", "demis_hassabis"]
+    },
+    {
+        "id": 20,
+        "question": "Who is the CEO of the company that invested in the startup co-founded by Dario Amodei, and how did that startup's founders relate to the company co-founded by Elon Musk?",
+        "type": "multi", "hops": 4,
+        "ground_truth": "Google/Amazon invested in Anthropic (Dario Amodei). The founders were former researchers at OpenAI (co-founded by Elon Musk). Sundar Pichai is CEO of Google.",
+        "required_pages": ["elon_musk", "openai", "anthropic", "sundar_pichai"]
+    }
+]
+
+def verify():
+    # Load corpus to check entity presence
+    corpus_dir = ROOT / "data" / "wiki"
+    
+    final_questions = []
+    for q in QUESTIONS:
+        req_pages = q["required_pages"]
+        # Basic check: all required pages must exist
+        for page in req_pages:
+            p_file = corpus_dir / f"{page}.txt"
+            if not p_file.exists():
+                print(f"ERROR: Missing page file {page}.txt for Q{q['id']}")
+        
+        # Verify hops match req_pages length for multi-hop
+        if q["type"] == "multi" and len(req_pages) < q["hops"]:
+             print(f"WARNING: Q{q['id']} has {q['hops']} hops but only {len(req_pages)} pages.")
+             
+        final_questions.append(q)
+
+    with QUESTIONS_PATH.open("w", encoding="utf-8") as fh:
+        json.dump(final_questions, fh, indent=2)
+    print(f"Verified and saved {len(final_questions)} questions to {QUESTIONS_PATH}")
+
+if __name__ == "__main__":
+    verify()

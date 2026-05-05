@@ -1,0 +1,59 @@
+Anthropicis an Americanartificial intelligence(AI) company headquartered inSan Francisco. It has developed a range oflarge language models(LLMs) namedClaudeand focuses onAI safety.[7]
+
+Anthropic was founded in 2021 by former members ofOpenAI, including siblingsDaniela AmodeiandDario Amodei, who are president and CEO, respectively.[8]The company isprivately heldand, as of February 2026,[update]had an estimated value of $380 billion.[9]
+
+Anthropic was founded in 2021 by seven former employees of OpenAI, including siblings Daniela Amodei and Dario Amodei, the latter of whom was OpenAI's Vice President of Research.[10][11]
+
+In the summer of 2022, Anthropic finishedtrainingthe first version ofClaudebut did not immediately release it, citing a need for further internal safety testing and a desire to avoid initiating a potentially hazardous race to develop increasingly powerful AI systems.[12]It was released in March 2023.[13]
+
+In 2024, Anthropic hired several notable employees from OpenAI, includingJan LeikeandJohn Schulman.[14]
+
+In May 2025, the company announced Claude 4. It also introduced new API capabilities, including theModel Context Protocol(MCP) connector.[15]The company hosted its inaugural developer conference that month.[16]Also in May, Anthropic launched aweb searchAPI that enables Claude to access real-time information from the internet.[17]Claude Code, Anthropic's coding assistant, transitioned from research preview to general availability.[15]
+
+In September 2025, Anthropic announced that it would stop selling its products to groups majority-owned by Chinese, Russian, Iranian, or North Korean entities due to national security concerns.[18]
+
+In October 2025, Anthropic announced a cloud partnership with Google, giving it access to up to one million of Google's customTensor Processing Units(TPUs), potentially adding more than one gigawatt of AI compute capacity by 2026.[19]In November,NvidiaandMicrosoftwere expected to invest up to $15 billion in Anthropic, and Anthropic said it would buy $30 billion of computing capacity fromMicrosoft Azurerunning on Nvidia AI systems.[20]
+
+In November 2025, Anthropic said that hackers sponsored by theChinese governmentused Claude to perform automated cyberattacks against around 30 global organisations. The hackers bypassed Anthropic's safeguards by pretending it was for defensive testing.[21][22]
+
+In December 2025, Anthropic acquiredBunto improve the speed and stability of Claude Code.[23]The same month, Anthropic signed a multi-year, $200 million partnership withSnowflake Inc.to make Claude models available through that company's platform.[24]
+
+In February 2026, Anthropic aired two commercials duringSuper Bowl LX[25][26]as part of a broader marketing campaign called "A Time and a Place", with four ads created byMother. Each ad depicts AI assistants suddenly pivoting to promoting a fictional product in the middle of a conversation. Anthropic said that Claude will stay ad-free, in contrast to its competitor OpenAI, which introduced ads to the free version of ChatGPT.[26]
+
+In 2026, Anthropic refused theUnited States Department of Defense's (DoD) demand to remove contractual restrictions prohibiting the use of its AI technology for domesticsurveillanceandfully autonomous weapons. After the refusal, the DoD designated the company a "supply chain risk" and barred all U.S. military private contractors, suppliers, and partners from doing business with the firm.[27][28]
+
+According to Anthropic, its goal is to research AI systems' safety and reliability.[29]The Amodei siblings were among those who left OpenAI due to directional differences.[11]Anthropic operates as a publicbenefit corporation.[30]
+
+Anthropic's "Long-Term Benefit Trust" is a purpose trust for "the responsible development and maintenance of advanced AI for the long-term benefit of humanity". It holds Class T shares in the PBC, which allow it to elect directors to Anthropic's board.[31]As of January 2026, the members of the Trust are Neil Buddy Shah,Mariano-Florentino Cuéllar, andRichard Fontaine.[29]
+
+In January 2026, Anthropic introduced a division called "Labs", withMike Krieger(formerly the company's Chief Product Officer) joining it.[32]
+
+In March 2026, Anthropic launched the Anthropic Institute, a think tank led by Jack Clark studying AI.[30]
+
+Anthropic's flagship product line is the "Claude" series of large language models,[40]which some employees consider a reference to mathematicianClaude Shannon.[4]One of the techniques used tofine-tuneClaude models is called "constitutional AI", in which the LLM is trained to adhere to a set of principles called a constitution.[41]The company makes the models available via a web interface,[42]an API,[42]Amazon Bedrock,[43]an iOS app,[44]and Mac and Windows desktop apps.[45]
+
+Claude Code is acommand-lineAI agentdesigned for coding. "Cowork" is an equivalent with agraphical user interface, intended to be simpler to use.[46]While Claude Code is tailored towarddevelopers, Cowork is designed for non-technical users, enabling them to automate file andtask management(including reading, editing and writing new files) without requiringprogrammingknowledge.[47]
+
+With the advent of Claude Code,vibe codingbecame increasingly popular. Vibe coding is a programming approach in which users describe desired outcomes innatural languageand let anAI agentwrite the code. The term was coined by AI researcherAndrej Karpathyin February 2025 and rapidly gained popularity as AI coding tools became more ubiquitous.[48]
+
+Claude's first two versions, Claude and Claude Instant, were released in March 2023,[49][50]but only Anthropic-approved users could use them.[51]The next iteration, Claude 2, was launched to the public in July 2023.[52]
+
+In March 2024, Anthropic released three language models: Claude 3 Opus, Claude 3 Sonnet, and Claude 3 Haiku, in decreasing order of performance.[53]In June 2024, it released Claude 3.5 Sonnet.[54]
+
+In May 2025, Anthropic released Claude 4 Opus and Sonnet.[55]In February 2026, it released Claude Opus 4.6,[56]followed by Sonnet 4.6.[57]
+
+In April 2022, Anthropic announced it had received $580 million in funding,[58]including a $500 million investment fromFTXunder the leadership ofSam Bankman-Fried.[59][4]In September 2023, Amazon announced a partnership with Anthropic. Amazon became a minoritystakeholderby initially investing $1.25 billion and planning a total investment of $4 billion.[60]The remaining $2.75 billion was invested in March 2024.[61]In November 2024, Amazon invested another $4 billion, doubling its total investment.[62]As part of the deal, Anthropic usesAmazon Web Services(AWS) as its primarycloud providerand makes its AI models available to AWS customers.[60]
+
+In October 2023, Google invested $500 million in Anthropic and committed to an additional $1.5 billion over time.[63]In March 2025, Google agreed to invest another $1 billion in Anthropic.[64]
+
+Anthropic raised $3.5 billion in a Series E funding round in March 2025, achieving apost-money valuationof $61.5 billion, led byLightspeed Venture Partnerswith participation from several major investors.[65][66]
+
+In September 2025, Anthropic completed a Series F funding round, raising $13 billion at a post-money valuation of $183 billion. The round was co-led byIconiq Capital,Fidelity Management & Research, and Lightspeed Venture Partners, with participation from theQatar Investment Authorityand other investors.[67][68]
+
+On 31 December 2025, it was confirmed that Anthropic had signed a term sheet for a $10 billion funding round led byCoatueandGIC, at a $350 billion valuation.[69]
+
+On February 12, 2026, Anthropic announced that it had raised $30 billion in a Series G funding round, bringing its post-money valuation to $380 billion.[70][71]
+
+In November 2024, Anthropic partnered withPalantirandAmazon Web Servicesto provide the Claude model to U.S. intelligence and defense agencies.[72][73]In June 2025, Anthropic announced a "Claude Gov" model.Ars Technicareported that as of June 2025, it was in use at multiple U.S. national security agencies.[74]As of February 2026, Anthropic's partnership with Palantir makes Claude the only AI model used in classified missions.[75]
+
+In July 2025, theUnited States Department of Defense(DoD) announced that Anthropic had received a $200 million contract for AI in the military, along with Google, OpenAI, andxAI.[76]
